@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CampsDetailVC" customModule="CureadviserApp" customModuleProvider="target">
+            <connections>
+                <outlet property="TaskView" destination="yT9-OC-8WO" id="J5e-02-SWE"/>
+                <outlet property="TopView" destination="8Dh-v1-LjV" id="5z7-Gu-Jho"/>
+                <outlet property="campsTable" destination="tHe-7O-QWg" id="7sg-uD-Hi5"/>
+                <outlet property="curveView" destination="BbI-bt-bcb" id="zBV-qj-9EW"/>
+                <outlet property="shadowView" destination="rWG-aZ-Nqx" id="OMy-Nm-2Ug"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="TaskBtnCollection" destination="l0X-WW-HgB" collectionClass="NSMutableArray" id="Rs7-vT-BiC"/>
+                <outletCollection property="TaskBtnCollection" destination="nnq-Qa-MqO" collectionClass="NSMutableArray" id="geS-CF-LIz"/>
+                <outletCollection property="TaskBtnCollection" destination="FjC-JG-xky" collectionClass="NSMutableArray" id="f6r-5t-p3U"/>
+                <outletCollection property="TaskBtnCollection" destination="Sd0-Px-Od8" collectionClass="NSMutableArray" id="KTX-Cu-VJc"/>
+                <outletCollection property="TaskBtnCollection" destination="pCI-EY-f4y" collectionClass="NSMutableArray" id="DOr-gY-RO4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dh-v1-LjV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BbI-bt-bcb">
+                            <rect key="frame" x="0.0" y="115" width="375" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0L-EI-761">
+                            <rect key="frame" x="8" y="17" width="43" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="Back.png"/>
+                            <connections>
+                                <action selector="BackBtnAction:" destination="-1" eventType="touchUpInside" id="XBr-GH-PkC"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gxs-SL-w1X">
+                            <rect key="frame" x="17" y="60" width="70" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fortis Blood Donation Camp" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmB-QG-0rP">
+                            <rect key="frame" x="95" y="62" width="174" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.72549019609999998" green="0.68235294120000001" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWe-8e-hpu">
+                            <rect key="frame" x="0.0" y="150" width="375" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.2666666667" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="2jH-bq-Ulh"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tHe-7O-QWg">
+                    <rect key="frame" x="0.0" y="190" width="375" height="477"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sMq-uJ-4w4"/>
+                        <outlet property="delegate" destination="-1" id="xkQ-yk-gcU"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Dh-v1-LjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F6c-E8-CJf"/>
+                <constraint firstAttribute="trailing" secondItem="8Dh-v1-LjV" secondAttribute="trailing" id="df1-O0-Tog"/>
+                <constraint firstItem="tHe-7O-QWg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lpx-XQ-oo9"/>
+                <constraint firstAttribute="trailing" secondItem="tHe-7O-QWg" secondAttribute="trailing" id="nCM-Ks-g9K"/>
+                <constraint firstAttribute="bottom" secondItem="tHe-7O-QWg" secondAttribute="bottom" id="raE-0X-ab2"/>
+                <constraint firstItem="8Dh-v1-LjV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="t0g-XV-zvM"/>
+                <constraint firstItem="tHe-7O-QWg" firstAttribute="top" secondItem="8Dh-v1-LjV" secondAttribute="bottom" id="xwr-Gw-QSH"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="yT9-OC-8WO">
+            <rect key="frame" x="0.0" y="0.0" width="669" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0X-WW-HgB">
+                    <rect key="frame" x="0.0" y="5" width="140" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="s40-gI-Xcd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Basic information">
+                        <color key="titleColor" red="0.73333333329999995" green="0.33333333329999998" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnq-Qa-MqO">
+                    <rect key="frame" x="140" y="5" width="90" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="kPR-U7-XQI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Doctors">
+                        <color key="titleColor" red="0.73333333329999995" green="0.33333333329999998" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjC-JG-xky">
+                    <rect key="frame" x="230" y="5" width="130" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="fcr-ty-h6u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Specializations">
+                        <color key="titleColor" red="0.73333333329999995" green="0.33333333329999998" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd0-Px-Od8">
+                    <rect key="frame" x="360" y="5" width="80" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="jJN-G5-aYM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Staff">
+                        <color key="titleColor" red="0.73333333329999995" green="0.33333333329999998" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCI-EY-f4y">
+                    <rect key="frame" x="440" y="5" width="150" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Pbr-TN-RbV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Other Information">
+                        <color key="titleColor" red="0.73333333329999995" green="0.33333333329999998" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWG-aZ-Nqx">
+                    <rect key="frame" x="0.0" y="34" width="140" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.73333333329999995" green="0.33333333329999998" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="l0X-WW-HgB" firstAttribute="top" secondItem="yT9-OC-8WO" secondAttribute="top" constant="5" id="0TX-lP-J5d"/>
+                <constraint firstAttribute="bottom" secondItem="FjC-JG-xky" secondAttribute="bottom" constant="5" id="5Ra-Nu-e8X"/>
+                <constraint firstItem="Sd0-Px-Od8" firstAttribute="top" secondItem="yT9-OC-8WO" secondAttribute="top" constant="5" id="Amu-Nq-nk9"/>
+                <constraint firstItem="FjC-JG-xky" firstAttribute="top" secondItem="yT9-OC-8WO" secondAttribute="top" constant="5" id="E6D-kH-ouu"/>
+                <constraint firstAttribute="bottom" secondItem="nnq-Qa-MqO" secondAttribute="bottom" constant="5" id="FS9-02-7Bu"/>
+                <constraint firstItem="nnq-Qa-MqO" firstAttribute="leading" secondItem="l0X-WW-HgB" secondAttribute="trailing" id="M14-IO-4u8"/>
+                <constraint firstItem="l0X-WW-HgB" firstAttribute="leading" secondItem="yT9-OC-8WO" secondAttribute="leading" id="RaD-F6-QmP"/>
+                <constraint firstAttribute="trailing" secondItem="pCI-EY-f4y" secondAttribute="trailing" constant="21" id="RgQ-as-dt0"/>
+                <constraint firstAttribute="bottom" secondItem="pCI-EY-f4y" secondAttribute="bottom" constant="5" id="S7m-Xh-0ei"/>
+                <constraint firstItem="l0X-WW-HgB" firstAttribute="centerY" secondItem="yT9-OC-8WO" secondAttribute="centerY" id="Wnt-gV-2Jl"/>
+                <constraint firstAttribute="bottom" secondItem="Sd0-Px-Od8" secondAttribute="bottom" constant="5" id="dmy-IL-KKN"/>
+                <constraint firstItem="pCI-EY-f4y" firstAttribute="leading" secondItem="Sd0-Px-Od8" secondAttribute="trailing" id="lPg-y8-I1F"/>
+                <constraint firstItem="pCI-EY-f4y" firstAttribute="top" secondItem="yT9-OC-8WO" secondAttribute="top" constant="5" id="mjR-FD-Y5j"/>
+                <constraint firstItem="Sd0-Px-Od8" firstAttribute="leading" secondItem="FjC-JG-xky" secondAttribute="trailing" id="mpR-wa-jPc"/>
+                <constraint firstAttribute="bottom" secondItem="l0X-WW-HgB" secondAttribute="bottom" constant="5" id="s1v-YM-8Ay"/>
+                <constraint firstItem="nnq-Qa-MqO" firstAttribute="top" secondItem="yT9-OC-8WO" secondAttribute="top" constant="5" id="skq-IB-UZV"/>
+                <constraint firstItem="FjC-JG-xky" firstAttribute="leading" secondItem="nnq-Qa-MqO" secondAttribute="trailing" id="yQK-wI-ldT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="798.5" y="-727"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="Back.png" width="9" height="16"/>
+        <image name="Dr.png" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessStoryFullVC" customModule="CureadviserApp" customModuleProvider="target">
+            <connections>
+                <outlet property="img" destination="ykL-t0-hDA" id="pF1-wK-Mfb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0e0-BL-TGc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktG-CQ-ge0">
+                            <rect key="frame" x="8" y="22" width="40" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="Menus.png"/>
+                            <connections>
+                                <action selector="MenuAction:" destination="-1" eventType="touchUpInside" id="utA-kX-oVv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Success Stories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40D-sg-2oV">
+                            <rect key="frame" x="56" y="28" width="200" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.2666666667" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3Sp-dB-u7R"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGH-W5-WWk">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fortis.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ykL-t0-hDA">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="240" id="LpT-uJ-SjM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted on July 3, 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqR-Uc-rFJ">
+                            <rect key="frame" x="16" y="234" width="113" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="VDp-WP-TO9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                            <color key="textColor" red="0.48627450979999998" green="0.49019607840000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient With Swallowing Condition Says UMMC Endocrine Surgeon and Staff are 'Top Notch'" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrn-WQ-PJ0">
+                            <rect key="frame" x="16" y="261" width="351" height="72"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dul-1p-5kk">
+                            <rect key="frame" x="16" y="348" width="351" height="155.5"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.51764705879999995" green="0.51764705879999995" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dul-1p-5kk" firstAttribute="top" secondItem="Mrn-WQ-PJ0" secondAttribute="bottom" constant="15" id="6aE-9s-rsk"/>
+                        <constraint firstAttribute="trailing" secondItem="dul-1p-5kk" secondAttribute="trailing" constant="8" id="Axw-wn-nlE"/>
+                        <constraint firstItem="dqR-Uc-rFJ" firstAttribute="leading" secondItem="BGH-W5-WWk" secondAttribute="leading" constant="16" id="Ryg-l4-9sS"/>
+                        <constraint firstItem="ykL-t0-hDA" firstAttribute="leading" secondItem="BGH-W5-WWk" secondAttribute="leading" id="XRp-zn-LhY"/>
+                        <constraint firstItem="Mrn-WQ-PJ0" firstAttribute="top" secondItem="dqR-Uc-rFJ" secondAttribute="bottom" constant="15" id="drh-0d-rmA"/>
+                        <constraint firstItem="Mrn-WQ-PJ0" firstAttribute="leading" secondItem="BGH-W5-WWk" secondAttribute="leading" constant="16" id="gMU-he-BBk"/>
+                        <constraint firstItem="ykL-t0-hDA" firstAttribute="top" secondItem="BGH-W5-WWk" secondAttribute="top" id="h59-Su-2Td"/>
+                        <constraint firstAttribute="trailing" secondItem="Mrn-WQ-PJ0" secondAttribute="trailing" constant="8" id="n87-gL-8k0"/>
+                        <constraint firstItem="dqR-Uc-rFJ" firstAttribute="top" secondItem="ykL-t0-hDA" secondAttribute="bottom" constant="-6" id="p77-WD-UGN"/>
+                        <constraint firstItem="dul-1p-5kk" firstAttribute="leading" secondItem="BGH-W5-WWk" secondAttribute="leading" constant="16" id="pPm-4p-FzD"/>
+                        <constraint firstAttribute="trailing" secondItem="ykL-t0-hDA" secondAttribute="trailing" id="yK6-W2-k5w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BGH-W5-WWk" secondAttribute="bottom" id="1JY-Wt-VRb"/>
+                <constraint firstItem="BGH-W5-WWk" firstAttribute="top" secondItem="0e0-BL-TGc" secondAttribute="bottom" id="34q-zm-WH4"/>
+                <constraint firstItem="BGH-W5-WWk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5NW-zv-slf"/>
+                <constraint firstAttribute="trailing" secondItem="0e0-BL-TGc" secondAttribute="trailing" id="8ly-A3-rl1"/>
+                <constraint firstAttribute="trailing" secondItem="BGH-W5-WWk" secondAttribute="trailing" id="GDP-xs-YqA"/>
+                <constraint firstItem="0e0-BL-TGc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Yac-uI-fF7"/>
+                <constraint firstItem="0e0-BL-TGc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sAh-a1-a5e"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Fortis.jpg" width="600" height="393"/>
+        <image name="Menus.png" width="19" height="12"/>
+    </resources>
+</document>

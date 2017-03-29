@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="campsCell" id="KGk-i7-Jjw" customClass="CampsDetailTableCell" customModule="CureadviserApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-nc-JGu">
+                        <rect key="frame" x="0.0" y="1" width="320" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jaipur, Rajasthan " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l1-tv-lJe">
+                                <rect key="frame" x="46" y="12" width="114" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngb-06-Xiy">
+                                <rect key="frame" x="16" y="12" width="14" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="8md-Ih-edR"/>
+                                    <constraint firstAttribute="width" constant="14" id="wDM-BQ-0ya"/>
+                                </constraints>
+                                <color key="tintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="place_marker.png"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYT-87-c1l">
+                                <rect key="frame" x="40" y="39" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4Fs-6b-ZCc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7ca-Bv-8xd"/>
+                            <constraint firstItem="6l1-tv-lJe" firstAttribute="leading" secondItem="ngb-06-Xiy" secondAttribute="trailing" constant="16" id="9a7-hc-ZTu"/>
+                            <constraint firstItem="ngb-06-Xiy" firstAttribute="centerY" secondItem="6l1-tv-lJe" secondAttribute="centerY" constant="0.5" id="Eta-Oh-eE1"/>
+                            <constraint firstAttribute="bottom" secondItem="uYT-87-c1l" secondAttribute="bottom" id="Uev-aN-ZEU"/>
+                            <constraint firstItem="ngb-06-Xiy" firstAttribute="leading" secondItem="cDg-nc-JGu" secondAttribute="leading" constant="16" id="UgQ-yT-Jib"/>
+                            <constraint firstItem="uYT-87-c1l" firstAttribute="leading" secondItem="cDg-nc-JGu" secondAttribute="leading" constant="40" id="VZQ-Xp-nsH"/>
+                            <constraint firstItem="ngb-06-Xiy" firstAttribute="bottom" secondItem="cDg-nc-JGu" secondAttribute="bottomMargin" constant="-3" id="VkV-mf-8kE"/>
+                            <constraint firstAttribute="trailing" secondItem="uYT-87-c1l" secondAttribute="trailing" id="ptn-hx-TTG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cDg-nc-JGu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="07l-sZ-e53"/>
+                    <constraint firstAttribute="trailing" secondItem="cDg-nc-JGu" secondAttribute="trailing" id="J22-fu-daG"/>
+                    <constraint firstItem="cDg-nc-JGu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vug-XK-xbX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImgbtn" destination="ngb-06-Xiy" id="BKz-ct-zSF"/>
+                <outlet property="lblText" destination="6l1-tv-lJe" id="IB1-gb-uPF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="place_marker.png" width="17" height="17"/>
+    </resources>
+</document>

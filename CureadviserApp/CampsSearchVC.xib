@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CampsSearchVC" customModule="CureadviserApp" customModuleProvider="target">
+            <connections>
+                <outlet property="capmsTable" destination="QBN-Ch-ocI" id="FQX-4t-LFb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="912-MJ-zAn">
+                    <rect key="frame" x="0.0" y="64" width="414" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="6pu-20-ai4"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QBN-Ch-ocI">
+                    <rect key="frame" x="0.0" y="268" width="414" height="468"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fg6-zW-VeG"/>
+                        <outlet property="delegate" destination="-1" id="CFb-bu-eJI"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLM-A9-FHn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJk-SJ-xLq">
+                            <rect key="frame" x="8" y="22" width="40" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="1YC-iW-v5h"/>
+                            </constraints>
+                            <state key="normal" image="Menus.png"/>
+                            <connections>
+                                <action selector="MenuAction:" destination="-1" eventType="touchUpInside" id="17V-XT-oX3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medical Camps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-sd-jAX">
+                            <rect key="frame" x="56" y="28" width="150" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="hMS-I5-6aN"/>
+                                <constraint firstAttribute="height" constant="21" id="y9l-su-YTX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.2666666667" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EJk-SJ-xLq" secondAttribute="bottom" constant="8" id="Bxe-oL-7xq"/>
+                        <constraint firstAttribute="height" constant="64" id="L3I-P8-PUB"/>
+                        <constraint firstItem="EJk-SJ-xLq" firstAttribute="top" secondItem="fLM-A9-FHn" secondAttribute="top" constant="22" id="VCg-bo-hyz"/>
+                        <constraint firstItem="wJT-sd-jAX" firstAttribute="top" secondItem="fLM-A9-FHn" secondAttribute="top" constant="28" id="eTB-dI-8N2"/>
+                        <constraint firstItem="wJT-sd-jAX" firstAttribute="leading" secondItem="EJk-SJ-xLq" secondAttribute="trailing" constant="8" id="j1O-RP-KUc"/>
+                        <constraint firstItem="EJk-SJ-xLq" firstAttribute="leading" secondItem="fLM-A9-FHn" secondAttribute="leading" constant="8" id="ygT-qv-JJw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.73333333329999995" green="0.33333333329999998" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QBN-Ch-ocI" secondAttribute="bottom" id="5jE-16-AKe"/>
+                <constraint firstItem="912-MJ-zAn" firstAttribute="leading" secondItem="QBN-Ch-ocI" secondAttribute="leading" id="QvL-kd-qTz"/>
+                <constraint firstAttribute="trailing" secondItem="fLM-A9-FHn" secondAttribute="trailing" id="RQm-vS-z6P"/>
+                <constraint firstItem="912-MJ-zAn" firstAttribute="top" secondItem="fLM-A9-FHn" secondAttribute="bottom" id="VWP-Md-bek"/>
+                <constraint firstItem="fLM-A9-FHn" firstAttribute="trailing" secondItem="912-MJ-zAn" secondAttribute="trailing" id="Y58-H7-kJ3"/>
+                <constraint firstItem="fLM-A9-FHn" firstAttribute="leading" secondItem="912-MJ-zAn" secondAttribute="leading" id="gKI-nJ-DiH"/>
+                <constraint firstItem="fLM-A9-FHn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iBR-IT-IIC"/>
+                <constraint firstItem="fLM-A9-FHn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qXE-ed-q2Z"/>
+                <constraint firstItem="912-MJ-zAn" firstAttribute="trailing" secondItem="QBN-Ch-ocI" secondAttribute="trailing" id="qhw-5B-6sC"/>
+                <constraint firstItem="QBN-Ch-ocI" firstAttribute="top" secondItem="912-MJ-zAn" secondAttribute="bottom" constant="4" id="siI-uv-7RK"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Menus.png" width="19" height="12"/>
+    </resources>
+</document>

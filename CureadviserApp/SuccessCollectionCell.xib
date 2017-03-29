@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="successCell" id="gTV-IL-0wX" customClass="SuccessCollectionCell" customModule="CureadviserApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ol0-18-r1d">
+                        <rect key="frame" x="1" y="1" width="148" height="248"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fortis.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Pvc-xP-H2S">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="nYP-io-jme"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted on July 3, 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAb-mH-Em0">
+                                <rect key="frame" x="8" y="118" width="112.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <color key="textColor" red="0.48627450980392156" green="0.49019607843137253" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient With Swallowing Condition Says UMMC Endocrine Surgeon and Staff are 'Top Notch'" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-7c-A4e">
+                                <rect key="frame" x="8" y="141" width="134" height="100.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F1W-7c-A4e" firstAttribute="leading" secondItem="ol0-18-r1d" secondAttribute="leading" constant="8" id="8uB-c5-D5h"/>
+                            <constraint firstItem="Pvc-xP-H2S" firstAttribute="top" secondItem="ol0-18-r1d" secondAttribute="top" id="F1Q-g3-V6g"/>
+                            <constraint firstItem="EAb-mH-Em0" firstAttribute="top" secondItem="Pvc-xP-H2S" secondAttribute="bottom" constant="-2" id="Gtc-Yj-J8a"/>
+                            <constraint firstItem="Pvc-xP-H2S" firstAttribute="leading" secondItem="ol0-18-r1d" secondAttribute="leading" id="IXU-Rl-rth"/>
+                            <constraint firstAttribute="trailing" secondItem="F1W-7c-A4e" secondAttribute="trailing" constant="6" id="Lxn-CA-Aw4"/>
+                            <constraint firstItem="EAb-mH-Em0" firstAttribute="leading" secondItem="ol0-18-r1d" secondAttribute="leading" constant="8" id="M0n-Rd-hLP"/>
+                            <constraint firstAttribute="trailing" secondItem="Pvc-xP-H2S" secondAttribute="trailing" constant="-2" id="XQL-sa-7Rv"/>
+                            <constraint firstItem="F1W-7c-A4e" firstAttribute="top" secondItem="EAb-mH-Em0" secondAttribute="bottom" constant="11" id="mXq-hM-Vx4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ol0-18-r1d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="1LM-c6-sNg"/>
+                <constraint firstAttribute="bottom" secondItem="ol0-18-r1d" secondAttribute="bottom" constant="1" id="B5f-SK-ybp"/>
+                <constraint firstAttribute="trailing" secondItem="ol0-18-r1d" secondAttribute="trailing" constant="1" id="LP9-Hg-EMx"/>
+                <constraint firstItem="ol0-18-r1d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="h0L-Fl-FlG"/>
+            </constraints>
+            <connections>
+                <outlet property="Cellview" destination="ol0-18-r1d" id="Fjh-QP-nlZ"/>
+                <outlet property="img" destination="Pvc-xP-H2S" id="lqu-eA-z9k"/>
+                <outlet property="lblPostDate" destination="EAb-mH-Em0" id="9a9-gH-ewW"/>
+                <outlet property="lblTitle" destination="F1W-7c-A4e" id="W5Z-cL-byq"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="55"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Fortis.jpg" width="600" height="393"/>
+    </resources>
+</document>

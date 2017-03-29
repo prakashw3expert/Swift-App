@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DrCell" id="KGk-i7-Jjw" customClass="DoctorTblCell" customModule="CureadviserApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qM0-HH-kmr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dr.png" translatesAutoresizingMaskIntoConstraints="NO" id="wtY-7F-KPJ">
+                                <rect key="frame" x="10" y="14" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3l9-4i-bEe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Shekhar Bisth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-6N-mc4">
+                                <rect key="frame" x="84" y="12" width="214" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bVz-tL-LUq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MBBS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH7-D4-REP">
+                                <rect key="frame" x="84" y="34" width="52" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="geu-hb-RVX"/>
+                                    <constraint firstAttribute="width" constant="52" id="sax-d1-p6k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.64313725490196083" green="0.70588235294117652" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardiologiestm Anestheiologists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsF-Xl-HM1">
+                                <rect key="frame" x="84" y="53" width="214" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8wq-1R-ngH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.7803921568627451" green="0.4392156862745098" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAm-KA-uA6">
+                                <rect key="frame" x="24" y="66" width="32" height="15"/>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.69803921568627447" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="e5g-ON-DXm"/>
+                                    <constraint firstAttribute="width" constant="32" id="wMX-et-L3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dH7-D4-REP" firstAttribute="leading" secondItem="wtY-7F-KPJ" secondAttribute="trailing" constant="14" id="091-ht-tND"/>
+                            <constraint firstItem="CsF-Xl-HM1" firstAttribute="top" secondItem="XOt-6N-mc4" secondAttribute="bottom" constant="20" id="1fu-OT-rZ1"/>
+                            <constraint firstAttribute="bottom" secondItem="wtY-7F-KPJ" secondAttribute="bottom" constant="15" id="L26-Vm-pNw"/>
+                            <constraint firstAttribute="trailing" secondItem="XOt-6N-mc4" secondAttribute="trailing" constant="22" id="MNb-wp-SxX"/>
+                            <constraint firstItem="dH7-D4-REP" firstAttribute="top" secondItem="XOt-6N-mc4" secondAttribute="bottom" constant="1" id="Pf5-h0-HJC"/>
+                            <constraint firstItem="XOt-6N-mc4" firstAttribute="top" secondItem="qM0-HH-kmr" secondAttribute="top" constant="12" id="PlJ-Gt-CqS"/>
+                            <constraint firstItem="wtY-7F-KPJ" firstAttribute="top" secondItem="qM0-HH-kmr" secondAttribute="top" constant="14" id="Q0N-bC-cfn"/>
+                            <constraint firstItem="GAm-KA-uA6" firstAttribute="leading" secondItem="qM0-HH-kmr" secondAttribute="leading" constant="24" id="VdP-EG-a7f"/>
+                            <constraint firstItem="CsF-Xl-HM1" firstAttribute="leading" secondItem="wtY-7F-KPJ" secondAttribute="trailing" constant="14" id="a9D-de-CIb"/>
+                            <constraint firstAttribute="trailing" secondItem="CsF-Xl-HM1" secondAttribute="trailing" constant="22" id="dVs-AY-s4S"/>
+                            <constraint firstItem="XOt-6N-mc4" firstAttribute="leading" secondItem="wtY-7F-KPJ" secondAttribute="trailing" constant="14" id="eb7-aQ-ANg"/>
+                            <constraint firstAttribute="bottom" secondItem="GAm-KA-uA6" secondAttribute="bottom" constant="8" id="f1S-Gz-Uvq"/>
+                            <constraint firstItem="wtY-7F-KPJ" firstAttribute="leading" secondItem="qM0-HH-kmr" secondAttribute="leading" constant="10" id="h4b-mb-aIj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qM0-HH-kmr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L34-if-JIe"/>
+                    <constraint firstAttribute="trailing" secondItem="qM0-HH-kmr" secondAttribute="trailing" id="d3b-dk-62o"/>
+                    <constraint firstItem="qM0-HH-kmr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eF9-E7-CuX"/>
+                    <constraint firstAttribute="bottom" secondItem="qM0-HH-kmr" secondAttribute="bottom" id="js8-FR-mQv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="wtY-7F-KPJ" id="u2j-aj-gHF"/>
+                <outlet property="lblDegree" destination="dH7-D4-REP" id="iCt-cO-3Ri"/>
+                <outlet property="lblDetail" destination="CsF-Xl-HM1" id="8ut-9p-Dok"/>
+                <outlet property="lblName" destination="XOt-6N-mc4" id="7x1-Yc-Xae"/>
+                <outlet property="lblRating" destination="GAm-KA-uA6" id="jRW-Mk-CCh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Dr.png" width="100" height="100"/>
+    </resources>
+</document>
