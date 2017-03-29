@@ -10,6 +10,7 @@ import UIKit
 
 class DoctorSearchVC: UIViewController, UITableViewDataSource,UITableViewDelegate{
 
+    @IBOutlet var filterScrView: UIScrollView!
     @IBOutlet var Drt: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,10 @@ class DoctorSearchVC: UIViewController, UITableViewDataSource,UITableViewDelegat
         Drt.register(UINib(nibName: "DoctorTblCell", bundle: nil), forCellReuseIdentifier: "DrCell")
         Drt.delegate = self
         Drt.dataSource = self
+        
+        
+        filterScrView.contentSize = CGSize(width: screenWidth, height: 850)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +59,14 @@ class DoctorSearchVC: UIViewController, UITableViewDataSource,UITableViewDelegat
     }
     
     
+    @IBAction func FilterAction(_ sender: Any) {
+        
+        filterScrView.frame = self.view.frame
+        self.view.addSubview(filterScrView)
+        
+    }
+    @IBAction func SortAction(_ sender: Any) {
+    }
     @IBAction func MenuAction(_ sender: Any) {
         
          self.menuContainerViewController!.toggleLeftSideMenuCompletion({})

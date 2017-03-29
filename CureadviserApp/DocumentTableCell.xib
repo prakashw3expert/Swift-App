@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="documentCell" id="KGk-i7-Jjw" customClass="DocumentTableCell" customModule="CureadviserApp" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="documentCell" id="KGk-i7-Jjw" customClass="DocumentTableCell" customModule="CureadviserApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -67,27 +67,56 @@
                         <color key="textColor" red="0.59999999999999998" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEa-wE-8IU">
+                        <rect key="frame" x="80" y="78" width="232" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.90588235289999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="oQM-4R-bdh"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k64-9M-j3G">
+                        <rect key="frame" x="279" y="30" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="SU5-Gg-vaS"/>
+                            <constraint firstAttribute="height" constant="25" id="vr7-ki-R2n"/>
+                        </constraints>
+                        <color key="tintColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="sharing-interface.png"/>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="QEa-wE-8IU" secondAttribute="bottom" id="2K0-Ua-qH5"/>
                     <constraint firstItem="gph-Xx-i6L" firstAttribute="top" secondItem="5lm-tk-62j" secondAttribute="bottom" constant="10" id="43T-BN-hqt"/>
                     <constraint firstItem="xcn-HS-w9s" firstAttribute="top" secondItem="5lm-tk-62j" secondAttribute="bottom" constant="10" id="7qm-6w-tZa"/>
+                    <constraint firstAttribute="trailing" secondItem="QEa-wE-8IU" secondAttribute="trailing" constant="8" id="8Rn-b1-WnC"/>
                     <constraint firstItem="5lm-tk-62j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="72" id="I4z-uk-JkT"/>
                     <constraint firstItem="vJP-kQ-elx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="P45-MK-rUN"/>
                     <constraint firstAttribute="trailingMargin" secondItem="5lm-tk-62j" secondAttribute="trailing" constant="80" id="YPz-1y-mZN"/>
                     <constraint firstItem="vJP-kQ-elx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="YcO-jP-5lP"/>
+                    <constraint firstItem="QEa-wE-8IU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="Zsp-W7-9Iy"/>
                     <constraint firstItem="cVq-mx-IUP" firstAttribute="leading" secondItem="vJP-kQ-elx" secondAttribute="trailing" constant="8" id="aeb-eN-tfV"/>
                     <constraint firstItem="gph-Xx-i6L" firstAttribute="leading" secondItem="xcn-HS-w9s" secondAttribute="trailing" constant="5" id="ewB-e7-U4g"/>
                     <constraint firstItem="xcn-HS-w9s" firstAttribute="leading" secondItem="cVq-mx-IUP" secondAttribute="trailing" constant="4" id="fjY-82-NPA"/>
                     <constraint firstItem="cVq-mx-IUP" firstAttribute="top" secondItem="5lm-tk-62j" secondAttribute="bottom" constant="9" id="gnP-mf-gzM"/>
                     <constraint firstItem="5lm-tk-62j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="n2Y-PA-gld"/>
+                    <constraint firstItem="k64-9M-j3G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="s5K-S0-E9x"/>
                     <constraint firstItem="roa-41-W07" firstAttribute="top" secondItem="5lm-tk-62j" secondAttribute="bottom" constant="8" id="sqf-sV-FfA"/>
+                    <constraint firstAttribute="trailing" secondItem="k64-9M-j3G" secondAttribute="trailing" constant="16" id="yS5-BH-eJd"/>
                     <constraint firstItem="roa-41-W07" firstAttribute="leading" secondItem="gph-Xx-i6L" secondAttribute="trailing" constant="5" id="zuA-M4-ag4"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="btnShare" destination="k64-9M-j3G" id="Bwa-fH-dYg"/>
+                <outlet property="img" destination="vJP-kQ-elx" id="ozt-wQ-ZQ4"/>
+                <outlet property="lblDate" destination="roa-41-W07" id="spn-5m-1QO"/>
+                <outlet property="lblReportName" destination="5lm-tk-62j" id="v34-On-tD7"/>
+                <outlet property="lblTime" destination="xcn-HS-w9s" id="0tV-ig-Ubc"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
         <image name="Time.png" width="16" height="16"/>
         <image name="schedule.png" width="32" height="32"/>
+        <image name="sharing-interface.png" width="16" height="16"/>
     </resources>
 </document>

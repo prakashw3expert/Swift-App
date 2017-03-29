@@ -10,9 +10,11 @@ import UIKit
 
 
 
-class DoctorDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class DoctorDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource,CalendarViewDataSource,CalendarViewDelegate {
 
     
+    @IBOutlet var bookAppointmentBtn: UIButton!
+    @IBOutlet var bookAppointmentView: UIView!
     @IBOutlet var curveView: UIView!
     @IBOutlet var schduleBtn: UIButton!
     @IBOutlet var imgDr: UIImageView!
@@ -25,6 +27,7 @@ class DoctorDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet var btnSchedule: UIButton!
     @IBOutlet var btnOtherInfo: UIButton!
     
+    @IBOutlet var calenderView: CalendarView!
     @IBOutlet var TaskBtnCollection: [UIButton]!
     
     @IBOutlet var shadowView: UIView!
@@ -55,13 +58,25 @@ class DoctorDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         
         schduleBtn.layer.cornerRadius = 25
-        //schduleBtn.clipsToBounds = true
         schduleBtn.layer.shadowColor = UIColor.darkGray.cgColor
-        schduleBtn.layer.shadowOffset = CGSize(width: 0, height: 1.0)
-        schduleBtn.layer.shadowOpacity = 0.5
+        schduleBtn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        schduleBtn.layer.shadowOpacity = 0.8
         schduleBtn.layer.shadowRadius = 2.0
         
         
+        bookAppointmentBtn.layer.cornerRadius = 25
+        bookAppointmentBtn.layer.shadowColor = UIColor.darkGray.cgColor
+        bookAppointmentBtn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        bookAppointmentBtn.layer.shadowOpacity = 0.8
+        bookAppointmentBtn.layer.shadowRadius = 2.0
+        
+        calenderView.delegate = self
+        calenderView.dataSource = self
+        calenderView.direction  = .horizontal
+        
+        
+        let today = Date()
+        self.calenderView.setDisplayDate(today, animated: false)
         
         
         ScrlTaskView.frame = CGRect(x: 0, y: 150, width: screenWidth, height: 40)
@@ -87,6 +102,67 @@ class DoctorDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         
     }
+    
+    
+    
+    //********* Calendar View Delegate and Data Source
+    
+    func startDate() -> Date? {
+        var dateComponents = DateComponents()
+        //dateComponents.month = -3
+        
+        let today = Date()
+        
+        let threeMonthsAgo = (self.calenderView.calendar as NSCalendar).date(byAdding: dateComponents, to: today, options: NSCalendar.Options())
+        
+        
+        return threeMonthsAgo
+    }
+    
+    func endDate() -> Date? {
+        
+        var dateComponents = DateComponents()
+        
+        dateComponents.year = 2;
+        let today = Date()
+        
+        let twoYearsFromNow = (self.calenderView.calendar as NSCalendar).date(byAdding: dateComponents, to: today, options: NSCalendar.Options())
+        
+        return twoYearsFromNow
+        
+    }
+    
+    
+    //    override func viewDidLayoutSubviews() {
+    //
+    //        super.viewDidLayoutSubviews()
+    //
+    //        let width = self.bookAppointmentView.frame.size.width - 8.0 * 2
+    //        let height = width + 20.0
+    //        self.calendarView.frame = CGRect(x: 16.0, y: 32.0, width: width, height: height)
+    //
+    //
+    //    }
+    
+    
+    // MARK : KDCalendarDelegate
+    
+    func calendar(_ calendar: CalendarView, didSelectDate date : Date, withEvents events: [CalendarEvent]) {
+        
+        for event in events {
+            print("You have an event starting at \(event.startDate) : \(event.title)")
+        }
+        print("Did Select: \(date) with Events: \(events.count)")
+        
+        
+        
+    }
+    
+    func calendar(_ calendar: CalendarView, didScrollToMonth date : Date) {
+        
+        print(date)
+    }
+    
 
     func TaskBtnActions(sender:UIButton){
     
@@ -329,8 +405,21 @@ class DoctorDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
     
+    @IBAction func BookAppointmentAction(_ sender: Any) {
+        
+        self.navigationController?.pushViewController(ConfirmAppointmentVC(nibName:"ConfirmAppointmentVC", bundle: nil), animated: true)
+    }
+    @IBAction func CancelAppointmentAction(_ sender: Any) {
+        
+        bookAppointmentView.removeFromSuperview()
+    }
     
     @IBAction func ScheduleBtnAction(_ sender: Any) {
+        
+        bookAppointmentView.frame = self.view.frame
+        self.view.addSubview(bookAppointmentView)
+        
+        
     }
     
     

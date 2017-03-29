@@ -19,6 +19,9 @@ class Dashboard: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     let titleArr = ["Search Doctor","Search Camps","Search Hospital","Compare","Cureted Advice","Success Story"]
     let detailarr = ["More than 51,00 Dotors","More than 51,00 Camps","More than 51,00 Hospital","Your Choice","More than 51,00 Camps","More than 51,00 Dotors",]
     
+    let imageArr = ["doctorc.png","camps.png","Hospital.png","Hospital.png","hand.png","story.png"]
+    
+    
     @IBOutlet var scrView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +75,7 @@ class Dashboard: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         
         cell.titleLbl.text = titleArr[indexPath.row]
         cell.detailLbl.text = detailarr[indexPath.row]
-        
+        cell.img.image = UIImage.init(named: imageArr[indexPath.row])
         
     
         

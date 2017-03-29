@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoctorSearchVC" customModule="CureadviserApp" customModuleProvider="target">
             <connections>
                 <outlet property="Drt" destination="Gn8-xj-mOv" id="9sQ-rI-yPz"/>
+                <outlet property="filterScrView" destination="ojR-Lp-2fD" id="WwT-3g-Aql"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -43,15 +44,45 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIi-16-uQh">
+                            <rect key="frame" x="319" y="22" width="40" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="vHV-Zv-7ej"/>
+                                <constraint firstAttribute="height" constant="34" id="yJa-kJ-4Uu"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="6"/>
+                            <state key="normal" image="sort.png"/>
+                            <connections>
+                                <action selector="SortAction:" destination="-1" eventType="touchUpInside" id="O38-ei-cWp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDd-mg-YRF">
+                            <rect key="frame" x="267" y="22" width="40" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="fjM-62-Pho"/>
+                                <constraint firstAttribute="height" constant="34" id="wot-5u-oZ4"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="6"/>
+                            <state key="normal" image="filter.png"/>
+                            <connections>
+                                <action selector="FilterAction:" destination="-1" eventType="touchUpInside" id="Maz-zm-RG2"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.37647058820000001" green="0.2666666667" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="0dc-bQ-VKW" secondAttribute="bottom" constant="8" id="7dO-OY-y0l"/>
                         <constraint firstItem="0dc-bQ-VKW" firstAttribute="top" secondItem="DNh-kE-f4X" secondAttribute="top" constant="22" id="7ka-5p-33Y"/>
+                        <constraint firstAttribute="trailing" secondItem="pIi-16-uQh" secondAttribute="trailing" constant="16" id="9ee-5C-WNf"/>
                         <constraint firstItem="8IR-Wh-0wV" firstAttribute="leading" secondItem="0dc-bQ-VKW" secondAttribute="trailing" constant="8" id="AAE-Y8-8RG"/>
                         <constraint firstAttribute="height" constant="64" id="OCR-0z-PEu"/>
                         <constraint firstItem="8IR-Wh-0wV" firstAttribute="top" secondItem="DNh-kE-f4X" secondAttribute="top" constant="28" id="SdG-9P-TiL"/>
                         <constraint firstItem="0dc-bQ-VKW" firstAttribute="leading" secondItem="DNh-kE-f4X" secondAttribute="leading" constant="8" id="bAI-vh-sXf"/>
+                        <constraint firstAttribute="bottom" secondItem="pIi-16-uQh" secondAttribute="bottom" constant="8" id="hVv-KK-7c1"/>
+                        <constraint firstAttribute="bottom" secondItem="TDd-mg-YRF" secondAttribute="bottom" constant="8" id="xUX-0E-ggq"/>
+                        <constraint firstItem="pIi-16-uQh" firstAttribute="leading" secondItem="TDd-mg-YRF" secondAttribute="trailing" constant="12" id="zdi-m9-zvJ"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gn8-xj-mOv">
@@ -78,8 +109,33 @@
             </constraints>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ojR-Lp-2fD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9c-Po-9eo">
+                    <rect key="frame" x="67" y="80" width="240" height="700"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="700" id="9VK-ZA-iV9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.34302262931034483" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a9c-Po-9eo" secondAttribute="bottom" constant="52" id="Fkm-oy-lwr"/>
+                <constraint firstItem="a9c-Po-9eo" firstAttribute="leading" secondItem="ojR-Lp-2fD" secondAttribute="leading" constant="67" id="UXt-19-KOq"/>
+                <constraint firstItem="a9c-Po-9eo" firstAttribute="centerX" secondItem="ojR-Lp-2fD" secondAttribute="centerX" id="cOo-wR-Ats"/>
+                <constraint firstItem="a9c-Po-9eo" firstAttribute="top" secondItem="ojR-Lp-2fD" secondAttribute="top" constant="80" id="phU-Uu-MIo"/>
+                <constraint firstAttribute="trailing" secondItem="a9c-Po-9eo" secondAttribute="trailing" constant="68" id="y2a-vl-cwR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="554.5" y="160"/>
+        </scrollView>
     </objects>
     <resources>
         <image name="Menus.png" width="19" height="12"/>
+        <image name="filter.png" width="24" height="24"/>
+        <image name="sort.png" width="24" height="24"/>
     </resources>
 </document>

@@ -10,18 +10,19 @@ import UIKit
 
 class HospitalSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    
     @IBOutlet var HospitalTable: UITableView!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        
-        
+        // Do any additional setup after loading the view
         
         HospitalTable.register(UINib(nibName: "HospitalSearchCell", bundle: nil), forCellReuseIdentifier: "HospitalCell")
         HospitalTable.delegate = self
         HospitalTable.dataSource = self
+        
+      
         
     }
 
@@ -51,6 +52,12 @@ class HospitalSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSour
     
     
     
+    
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -68,3 +75,5 @@ class HospitalSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSour
     */
 
 }
+
+

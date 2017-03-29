@@ -11,6 +11,14 @@ import UIKit
 class DocumentManagerVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet var documentTable: UITableView!
 
+   
+    
+    
+    
+    
+    @IBOutlet var messageSendBtn: UIButton!
+    @IBOutlet var txtMsg: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,17 +29,28 @@ class DocumentManagerVC: UIViewController,UITableViewDelegate,UITableViewDataSou
         documentTable.register(UINib(nibName: "DocumentTableCell", bundle: nil), forCellReuseIdentifier: "documentCell")
         
         
+        
+        
+        
+        
+        
+        
+        
+        
     }
     
     
     // UITable View Data Source and Delegate funcation
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        
        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        
+            return 4
+       
     }
     
 //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -39,7 +58,6 @@ class DocumentManagerVC: UIViewController,UITableViewDelegate,UITableViewDataSou
 //    }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
         return "June 2015"
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -48,9 +66,26 @@ class DocumentManagerVC: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let Cell:DocumentTableCell = tableView.dequeueReusableCell(withIdentifier: "documentCell", for: indexPath) as! DocumentTableCell
+        Cell.btnShare.tag = indexPath.row
+        Cell.btnShare.addTarget(self, action: #selector(ShareBtnAction(_:)), for: .touchUpInside)
         
         return Cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+    }
+    
+    func ShareBtnAction(_ sender : UIButton) {
+        let page = ShareScreenVC(nibName: "ShareScreenVC", bundle: nil)
+        page.modalPresentationStyle = .overCurrentContext
+        self.present(page, animated: true, completion: nil)
+       
+        
     }
     
     

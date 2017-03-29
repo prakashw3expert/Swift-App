@@ -10,9 +10,20 @@ import UIKit
 
 class DocumentTableCell: UITableViewCell {
 
+    @IBOutlet var lblDate: UILabel!
+    @IBOutlet var lblTime: UILabel!
+    @IBOutlet var lblReportName: UILabel!
+    @IBOutlet var img: UIImageView!
+    @IBOutlet var btnShare: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+        img.layer.cornerRadius = 5
+        btnShare.layer.cornerRadius = 4
+        btnShare.layer.borderColor = curveColor.cgColor
+        btnShare.layer.borderWidth = 1
         
         
         

@@ -10,6 +10,7 @@ import UIKit
 
 class MyAppointmentsVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet var receiptActionBtn: UIButton!
     @IBOutlet var appointMentTable: UITableView!
     
     @IBOutlet var curveView: UIView!
@@ -20,6 +21,15 @@ class MyAppointmentsVC: UIViewController,UITableViewDelegate,UITableViewDataSour
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        receiptActionBtn.layer.cornerRadius = 25
+        receiptActionBtn.layer.shadowColor = UIColor.darkGray.cgColor
+        receiptActionBtn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        receiptActionBtn.layer.shadowOpacity = 0.8
+        receiptActionBtn.layer.shadowRadius = 2.0
+        
+        
         
         let path = UIBezierPath()
         path.move(to: CGPoint(x: -2, y: 90))
@@ -120,7 +130,7 @@ class MyAppointmentsVC: UIViewController,UITableViewDelegate,UITableViewDataSour
     }
     
     @IBAction func ReceiptCancelAction(_ sender: Any) {
-        
+        receiptActionView.isHidden = true
         self.appointmentDetailView.removeFromSuperview()
     }
     

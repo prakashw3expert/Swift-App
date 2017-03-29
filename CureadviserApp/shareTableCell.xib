@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shareCell" id="KGk-i7-Jjw" customClass="shareTableCell" customModule="CureadviserApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-jW-EzM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pTu-Sf-GHF">
+                                <rect key="frame" x="12" y="4" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DJo-8R-GIz"/>
+                                    <constraint firstAttribute="width" constant="40" id="p8X-Pr-5lC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Ajay Singh Ranawat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-im-2A1">
+                                <rect key="frame" x="60" y="14" width="220" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cHg-H0-aMa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE4-fy-Aaz">
+                                <rect key="frame" x="280" y="5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fcZ-Ti-ksN"/>
+                                    <constraint firstAttribute="width" constant="40" id="uEB-74-wMy"/>
+                                </constraints>
+                                <color key="tintColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="cancel-cross.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pTu-Sf-GHF" firstAttribute="leading" secondItem="MX2-jW-EzM" secondAttribute="leading" constant="12" id="2mC-Fl-Uod"/>
+                            <constraint firstAttribute="trailing" secondItem="cE4-fy-Aaz" secondAttribute="trailing" id="5yJ-w9-r9j"/>
+                            <constraint firstItem="kPn-im-2A1" firstAttribute="leading" secondItem="pTu-Sf-GHF" secondAttribute="trailing" constant="8" id="7Rg-6S-Lic"/>
+                            <constraint firstItem="cE4-fy-Aaz" firstAttribute="leading" secondItem="kPn-im-2A1" secondAttribute="trailing" id="DaX-BP-P6Z"/>
+                            <constraint firstItem="kPn-im-2A1" firstAttribute="top" secondItem="MX2-jW-EzM" secondAttribute="top" constant="14" id="JsO-Ec-zac"/>
+                            <constraint firstItem="pTu-Sf-GHF" firstAttribute="top" secondItem="MX2-jW-EzM" secondAttribute="top" constant="4" id="Qfd-UI-069"/>
+                            <constraint firstItem="cE4-fy-Aaz" firstAttribute="top" secondItem="MX2-jW-EzM" secondAttribute="top" constant="5" id="a4J-1K-Ueu"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTo-vZ-05f">
+                        <rect key="frame" x="60" y="48" width="252" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.90588235289999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9Kg-CA-75y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MX2-jW-EzM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Qe-qA-N3W"/>
+                    <constraint firstAttribute="trailing" secondItem="LTo-vZ-05f" secondAttribute="trailing" constant="8" id="BYD-Ry-pbp"/>
+                    <constraint firstItem="LTo-vZ-05f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="FiM-ac-dik"/>
+                    <constraint firstAttribute="bottom" secondItem="LTo-vZ-05f" secondAttribute="bottom" id="KDB-pB-6Zp"/>
+                    <constraint firstAttribute="bottom" secondItem="MX2-jW-EzM" secondAttribute="bottom" id="QIT-Ot-Dlz"/>
+                    <constraint firstItem="MX2-jW-EzM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UOJ-JO-M6L"/>
+                    <constraint firstAttribute="trailing" secondItem="MX2-jW-EzM" secondAttribute="trailing" id="rkU-zD-jNp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btndelete" destination="cE4-fy-Aaz" id="Eyw-hH-mvq"/>
+                <outlet property="img" destination="pTu-Sf-GHF" id="8Hh-dn-0dD"/>
+                <outlet property="lblDrName" destination="kPn-im-2A1" id="Tms-2J-VLK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cancel-cross.png" width="16" height="16"/>
+    </resources>
+</document>

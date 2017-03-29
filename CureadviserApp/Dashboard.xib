@@ -27,17 +27,34 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KnX-ja-cLi">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHt-GL-Li2">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHt-GL-Li2">
                             <rect key="frame" x="8" y="20" width="42" height="36"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Wsm-Va-SF8"/>
+                                <constraint firstAttribute="width" constant="42" id="dEL-NG-wOh"/>
+                            </constraints>
                             <state key="normal" image="Menus.png"/>
                             <connections>
                                 <action selector="MenuAction:" destination="-1" eventType="touchUpInside" id="Y5Y-OI-Ykx"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1M-pf-Uz4">
+                            <rect key="frame" x="58" y="27" width="212" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="212" id="4ih-zr-yRN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.37647058823529411" green="0.26666666666666666" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="v1M-pf-Uz4" firstAttribute="top" secondItem="KnX-ja-cLi" secondAttribute="top" constant="27" id="2qn-hF-qYF"/>
+                        <constraint firstItem="WHt-GL-Li2" firstAttribute="top" secondItem="KnX-ja-cLi" secondAttribute="top" constant="20" id="BNk-o4-5wg"/>
+                        <constraint firstItem="v1M-pf-Uz4" firstAttribute="leading" secondItem="WHt-GL-Li2" secondAttribute="trailing" constant="8" id="KB3-BL-bDJ"/>
+                        <constraint firstItem="WHt-GL-Li2" firstAttribute="leading" secondItem="KnX-ja-cLi" secondAttribute="leading" constant="8" id="ao3-1g-reS"/>
+                        <constraint firstAttribute="bottom" secondItem="v1M-pf-Uz4" secondAttribute="bottom" constant="16" id="ikn-Bt-fGk"/>
                         <constraint firstAttribute="height" constant="64" id="oex-HZ-Qzf"/>
                     </constraints>
                 </view>

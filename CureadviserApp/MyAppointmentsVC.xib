@@ -14,6 +14,7 @@
                 <outlet property="appointMentTable" destination="R2h-Gu-Z3s" id="6QI-ir-Goz"/>
                 <outlet property="appointmentDetailView" destination="utV-n2-V7c" id="Wal-0y-Y25"/>
                 <outlet property="curveView" destination="9xj-dc-Yil" id="K9q-2V-7ty"/>
+                <outlet property="receiptActionBtn" destination="fb1-Ov-T0m" id="K8t-DW-5C4"/>
                 <outlet property="receiptActionView" destination="dx6-vk-NKg" id="jqT-CV-SqC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -285,19 +286,6 @@
                             <color key="textColor" red="0.51764705882352946" green="0.51764705882352946" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-Ov-T0m">
-                            <rect key="frame" x="258" y="475" width="50" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.1019607843" green="0.69803921570000005" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="27"/>
-                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="12"/>
-                            <state key="normal" title="...">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="AppointmentReceiptAction:" destination="-1" eventType="touchUpInside" id="16f-g3-13g"/>
-                            </connections>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -305,6 +293,22 @@
                         <constraint firstAttribute="width" constant="320" id="sKA-MJ-6xv"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-Ov-T0m">
+                    <rect key="frame" x="278" y="554" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.1019607843" green="0.69803921570000005" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="KeW-u8-lYE"/>
+                        <constraint firstAttribute="height" constant="50" id="XGq-CA-Jxy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="27"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="12"/>
+                    <state key="normal" title="...">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="AppointmentReceiptAction:" destination="-1" eventType="touchUpInside" id="16f-g3-13g"/>
+                    </connections>
+                </button>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dx6-vk-NKg">
                     <rect key="frame" x="165" y="530" width="170" height="80"/>
                     <subviews>
@@ -344,6 +348,8 @@
                 <constraint firstItem="PLP-YB-tVG" firstAttribute="centerX" secondItem="utV-n2-V7c" secondAttribute="centerX" id="5Ju-CG-nTX"/>
                 <constraint firstItem="dx6-vk-NKg" firstAttribute="top" secondItem="PLP-YB-tVG" secondAttribute="bottom" constant="-54" id="Cua-z0-urU"/>
                 <constraint firstItem="PLP-YB-tVG" firstAttribute="centerY" secondItem="utV-n2-V7c" secondAttribute="centerY" id="Jqq-HT-0iD"/>
+                <constraint firstAttribute="trailing" secondItem="fb1-Ov-T0m" secondAttribute="trailing" constant="47" id="KOL-HU-qn5"/>
+                <constraint firstItem="fb1-Ov-T0m" firstAttribute="top" secondItem="PLP-YB-tVG" secondAttribute="bottom" constant="-30" id="aK4-7K-0H8"/>
             </constraints>
             <point key="canvasLocation" x="499.5" y="52.5"/>
         </view>
