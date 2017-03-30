@@ -12,10 +12,19 @@ class LeftSideVC: UIViewController {
 
     @IBOutlet var scrView: UIScrollView!
     @IBOutlet var menuView: UIView!
+    @IBOutlet var profileimg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        profileimg.layer.cornerRadius = 45
+        profileimg.clipsToBounds = true
+        profileimg.layer.borderColor = UIColor.lightGray.cgColor
+        profileimg.layer.borderWidth = 1
+        
+        
+        
         menuView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 740)
         scrView.addSubview(menuView)
         scrView.contentSize = CGSize(width: 250, height: 850)
@@ -27,6 +36,21 @@ class LeftSideVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func SettingsAction(_ sender: Any) {
+        
+        let nav = UINavigationController.init(rootViewController: SettingsVC(nibName: "SettingsVC", bundle: nil))
+        nav.navigationBar.isHidden = true
+        self.menuContainerViewController.centerViewController = nav
+        self.menuContainerViewController.setMenuState(MFSideMenuStateClosed, completion: {})
+        
+    }
+    
+    @IBAction func NotificationActionnn(_ sender: Any) {
+        let nav = UINavigationController.init(rootViewController: NotificationVC(nibName: "NotificationVC", bundle: nil))
+        nav.navigationBar.isHidden = true
+        self.menuContainerViewController.centerViewController = nav
+        self.menuContainerViewController.setMenuState(MFSideMenuStateClosed, completion: {})
+    }
     @IBAction func BasboardBtnAction(_ sender: UIButton) {
         
         let nav = UINavigationController.init(rootViewController: Dashboard(nibName: "Dashboard", bundle: nil))
@@ -99,6 +123,12 @@ class LeftSideVC: UIViewController {
     }
     
     @IBAction func TransactionAction(_ sender: UIButton) {
+        
+        let nav = UINavigationController.init(rootViewController: TransactionVC(nibName: "TransactionVC", bundle: nil))
+        nav.navigationBar.isHidden = true
+        self.menuContainerViewController.centerViewController = nav
+        self.menuContainerViewController.setMenuState(MFSideMenuStateClosed, completion: {})
+        
     }
     
     @IBAction func CuretedAdviceAction(_ sender: UIButton) {

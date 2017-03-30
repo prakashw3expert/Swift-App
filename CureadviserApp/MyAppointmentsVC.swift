@@ -29,11 +29,18 @@ class MyAppointmentsVC: UIViewController,UITableViewDelegate,UITableViewDataSour
         receiptActionBtn.layer.shadowOpacity = 0.8
         receiptActionBtn.layer.shadowRadius = 2.0
         
+       
+        let gradient = CAGradientLayer()
         
+        gradient.frame = appointmentDetailView.bounds
+        gradient.colors = [UIColor.clear.cgColor, UIColor.darkGray.cgColor]
+        
+        appointmentDetailView.layer.insertSublayer(gradient, at: 0)
         
         let path = UIBezierPath()
-        path.move(to: CGPoint(x: -2, y: 90))
-        path.addLine(to: CGPoint(x: screenWidth-54, y: 120))
+        path.move(to: CGPoint(x: 298, y: 120))
+        path.addLine(to: CGPoint(x: -2, y: 90))
+      
         
         //design path in layer
         let shapeLayer = CAShapeLayer()

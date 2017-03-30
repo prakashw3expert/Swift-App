@@ -10,22 +10,51 @@ import UIKit
 
 class DoctorSearchVC: UIViewController, UITableViewDataSource,UITableViewDelegate{
 
+    @IBOutlet var sortView: UIView!
+    @IBOutlet var SortingScreenView: UIView!
+    @IBOutlet var SuccessBtn: UIButton!
     @IBOutlet var filterScrView: UIScrollView!
     @IBOutlet var Drt: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+   
         // Do any additional setup after loading the view.
+        
+  
+    
+        SuccessBtn.layer.cornerRadius = 25
+        SuccessBtn.layer.shadowColor = UIColor.darkGray.cgColor
+        SuccessBtn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        SuccessBtn.layer.shadowOpacity = 0.8
+        SuccessBtn.layer.shadowRadius = 2.0
+        
+        
+        sortView.layer.cornerRadius = 4
+        sortView.layer.shadowColor = UIColor.darkGray.cgColor
+        sortView.layer.shadowOffset = CGSize(width: 1, height: 2.0)
+        sortView.layer.shadowOpacity = 0.8
+        sortView.layer.shadowRadius = 2.0
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DissmissSortViewAction))
+
+        SortingScreenView.addGestureRecognizer(tapGesture)
         
         Drt.register(UINib(nibName: "DoctorTblCell", bundle: nil), forCellReuseIdentifier: "DrCell")
         Drt.delegate = self
         Drt.dataSource = self
         
-        
-        filterScrView.contentSize = CGSize(width: screenWidth, height: 850)
+        filterScrView.frame = self.view.frame
+        filterScrView.contentSize = CGSize(width: screenWidth, height: 790)
         
     }
 
+    
+    func DissmissSortViewAction() {
+        
+        SortingScreenView.removeFromSuperview()
+    }
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -65,8 +94,26 @@ class DoctorSearchVC: UIViewController, UITableViewDataSource,UITableViewDelegat
         self.view.addSubview(filterScrView)
         
     }
-    @IBAction func SortAction(_ sender: Any) {
+    
+    @IBAction func FilterDismissAction(_ sender: Any) {
+        
+        filterScrView.removeFromSuperview()
     }
+    
+    
+    @IBAction func FilterSuccesAction(_ sender: Any) {
+        filterScrView.removeFromSuperview()
+    }
+    
+    
+    
+    @IBAction func SortAction(_ sender: Any) {
+        SortingScreenView.frame = self.view.frame
+        self.view.addSubview(SortingScreenView)
+        
+    }
+    
+    
     @IBAction func MenuAction(_ sender: Any) {
         
          self.menuContainerViewController!.toggleLeftSideMenuCompletion({})

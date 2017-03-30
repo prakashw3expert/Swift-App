@@ -9,7 +9,23 @@
 /* Begin PBXBuildFile section */
 		46017F831E8BCD3200180C78 /* cancel-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 46017F821E8BCD3200180C78 /* cancel-cross.png */; };
 		46017F851E8BCF5300180C78 /* send-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 46017F841E8BCF5300180C78 /* send-button.png */; };
+		460235CC1E8D348F00736894 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 460235CB1E8D348F00736894 /* settings.png */; };
+		460235CE1E8D34EA00736894 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 460235CD1E8D34EA00736894 /* notification.png */; };
+		460235D11E8D35F500736894 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460235CF1E8D35F500736894 /* SettingsVC.swift */; };
+		460235D21E8D35F500736894 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460235D01E8D35F500736894 /* SettingsVC.xib */; };
+		460235D41E8D36FB00736894 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 460235D31E8D36FB00736894 /* camera.png */; };
+		460235D61E8D3A3000736894 /* building.png in Resources */ = {isa = PBXBuildFile; fileRef = 460235D51E8D3A3000736894 /* building.png */; };
 		463F3C541E8B85B4009EAD42 /* Hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 463F3C531E8B85B4009EAD42 /* Hospital.png */; };
+		464B585C1E8CE6B5001B38EA /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B58571E8CE6B5001B38EA /* gender.png */; };
+		464B585D1E8CE6B5001B38EA /* manager.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B58581E8CE6B5001B38EA /* manager.png */; };
+		464B585E1E8CE6B5001B38EA /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B58591E8CE6B5001B38EA /* placeholder.png */; };
+		464B585F1E8CE6B5001B38EA /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B585A1E8CE6B5001B38EA /* timer.png */; };
+		464B58601E8CE6B5001B38EA /* userimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B585B1E8CE6B5001B38EA /* userimg.png */; };
+		464B58621E8D0CAC001B38EA /* delete-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B58611E8D0CAC001B38EA /* delete-button.png */; };
+		464B58671E8D0DAA001B38EA /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B58651E8D0DAA001B38EA /* TransactionVC.swift */; };
+		464B58681E8D0DAA001B38EA /* TransactionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464B58661E8D0DAA001B38EA /* TransactionVC.xib */; };
+		464B586B1E8D0E58001B38EA /* TransationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B58691E8D0E58001B38EA /* TransationTableCell.swift */; };
+		464B586C1E8D0E58001B38EA /* TransationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464B586A1E8D0E58001B38EA /* TransationTableCell.xib */; };
 		46F5F5AF1E8AAC9C004A21FB /* DasboardNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5F5AD1E8AAC9B004A21FB /* DasboardNewsVC.swift */; };
 		46F5F5B01E8AAC9C004A21FB /* DasboardNewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F5F5AE1E8AAC9B004A21FB /* DasboardNewsVC.xib */; };
 		46F673D51E8BD90A001FED46 /* shareTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F673D31E8BD90A001FED46 /* shareTableCell.swift */; };
@@ -142,7 +158,23 @@
 /* Begin PBXFileReference section */
 		46017F821E8BCD3200180C78 /* cancel-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-cross.png"; sourceTree = "<group>"; };
 		46017F841E8BCF5300180C78 /* send-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-button.png"; sourceTree = "<group>"; };
+		460235CB1E8D348F00736894 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		460235CD1E8D34EA00736894 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
+		460235CF1E8D35F500736894 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		460235D01E8D35F500736894 /* SettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		460235D31E8D36FB00736894 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		460235D51E8D3A3000736894 /* building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building.png; sourceTree = "<group>"; };
 		463F3C531E8B85B4009EAD42 /* Hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hospital.png; sourceTree = "<group>"; };
+		464B58571E8CE6B5001B38EA /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
+		464B58581E8CE6B5001B38EA /* manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manager.png; sourceTree = "<group>"; };
+		464B58591E8CE6B5001B38EA /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		464B585A1E8CE6B5001B38EA /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer.png; sourceTree = "<group>"; };
+		464B585B1E8CE6B5001B38EA /* userimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userimg.png; sourceTree = "<group>"; };
+		464B58611E8D0CAC001B38EA /* delete-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-button.png"; sourceTree = "<group>"; };
+		464B58651E8D0DAA001B38EA /* TransactionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
+		464B58661E8D0DAA001B38EA /* TransactionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionVC.xib; sourceTree = "<group>"; };
+		464B58691E8D0E58001B38EA /* TransationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransationTableCell.swift; sourceTree = "<group>"; };
+		464B586A1E8D0E58001B38EA /* TransationTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransationTableCell.xib; sourceTree = "<group>"; };
 		46F5F5AD1E8AAC9B004A21FB /* DasboardNewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DasboardNewsVC.swift; sourceTree = "<group>"; };
 		46F5F5AE1E8AAC9B004A21FB /* DasboardNewsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DasboardNewsVC.xib; sourceTree = "<group>"; };
 		46F673D31E8BD90A001FED46 /* shareTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shareTableCell.swift; sourceTree = "<group>"; };
@@ -301,6 +333,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		464B58631E8D0D6C001B38EA /* Dasboard VC */ = {
+			isa = PBXGroup;
+			children = (
+				5A1A6A361E7BCAB100C2C2AB /* Dashboard.swift */,
+				5A1A6A371E7BCAB100C2C2AB /* Dashboard.xib */,
+				5A1A6A3E1E7C02C900C2C2AB /* DasboardCollectionCell.swift */,
+				5A1A6A3F1E7C02C900C2C2AB /* DasboardCollectionCell.xib */,
+				5A0BCDFB1E7FBAFC004B64AA /* DasBoardTableCell.swift */,
+				5A0BCDFC1E7FBAFC004B64AA /* DasBoardTableCell.xib */,
+				46F5F5AD1E8AAC9B004A21FB /* DasboardNewsVC.swift */,
+				46F5F5AE1E8AAC9B004A21FB /* DasboardNewsVC.xib */,
+			);
+			name = "Dasboard VC";
+			sourceTree = "<group>";
+		};
+		464B58641E8D0D82001B38EA /* TransactionVC */ = {
+			isa = PBXGroup;
+			children = (
+				464B58651E8D0DAA001B38EA /* TransactionVC.swift */,
+				464B58661E8D0DAA001B38EA /* TransactionVC.xib */,
+				464B58691E8D0E58001B38EA /* TransationTableCell.swift */,
+				464B586A1E8D0E58001B38EA /* TransationTableCell.xib */,
+			);
+			name = TransactionVC;
+			sourceTree = "<group>";
+		};
 		5A0BCDFF1E7FBFFC004B64AA /* Doctors VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +382,11 @@
 				5A532CC21E80F877007FAD95 /* Side Menu */,
 				5A1A6A201E7BCA2700C2C2AB /* CureadviserApp */,
 				5A1A6A1F1E7BCA2700C2C2AB /* Products */,
+				464B58571E8CE6B5001B38EA /* gender.png */,
+				464B58581E8CE6B5001B38EA /* manager.png */,
+				464B58591E8CE6B5001B38EA /* placeholder.png */,
+				464B585A1E8CE6B5001B38EA /* timer.png */,
+				464B585B1E8CE6B5001B38EA /* userimg.png */,
 				5A586C9F1E89475A003ED713 /* RightBtnicon.png */,
 				5A586C9D1E894653003ED713 /* right-arrow.png */,
 				5A586C9B1E8942D8003ED713 /* photo-camera.png */,
@@ -380,14 +443,10 @@
 			isa = PBXGroup;
 			children = (
 				5A1A6A211E7BCA2700C2C2AB /* AppDelegate.swift */,
-				5A1A6A361E7BCAB100C2C2AB /* Dashboard.swift */,
-				5A1A6A371E7BCAB100C2C2AB /* Dashboard.xib */,
-				5A1A6A3E1E7C02C900C2C2AB /* DasboardCollectionCell.swift */,
-				5A1A6A3F1E7C02C900C2C2AB /* DasboardCollectionCell.xib */,
-				5A0BCDFB1E7FBAFC004B64AA /* DasBoardTableCell.swift */,
-				5A0BCDFC1E7FBAFC004B64AA /* DasBoardTableCell.xib */,
-				46F5F5AD1E8AAC9B004A21FB /* DasboardNewsVC.swift */,
-				46F5F5AE1E8AAC9B004A21FB /* DasboardNewsVC.xib */,
+				460235CF1E8D35F500736894 /* SettingsVC.swift */,
+				460235D01E8D35F500736894 /* SettingsVC.xib */,
+				464B58641E8D0D82001B38EA /* TransactionVC */,
+				464B58631E8D0D6C001B38EA /* Dasboard VC */,
 				5A7F60BD1E8A6D77000C3188 /* Compare Hospital */,
 				5A6FD3731E851B3500508B84 /* Success Stories VC */,
 				5A6FD36A1E850EAE00508B84 /* Document Manager VC */,
@@ -398,14 +457,19 @@
 				5A0BCDFF1E7FBFFC004B64AA /* Doctors VC */,
 				5A1A6A2B1E7BCA2700C2C2AB /* Assets.xcassets */,
 				5A1A6A301E7BCA2700C2C2AB /* Info.plist */,
+				460235CB1E8D348F00736894 /* settings.png */,
+				460235CD1E8D34EA00736894 /* notification.png */,
 				46F673DF1E8BF0DA001FED46 /* filter.png */,
+				464B58611E8D0CAC001B38EA /* delete-button.png */,
 				46F673E01E8BF0DA001FED46 /* sort.png */,
+				460235D31E8D36FB00736894 /* camera.png */,
 				46F673D91E8BE280001FED46 /* sharing-interface.png */,
 				46F673D71E8BDE8F001FED46 /* share.png */,
 				46017F841E8BCF5300180C78 /* send-button.png */,
 				46017F821E8BCD3200180C78 /* cancel-cross.png */,
 				46FE01881E8B8FA60004FD23 /* story.png */,
 				46FE01861E8B8EF90004FD23 /* camps.png */,
+				460235D51E8D3A3000736894 /* building.png */,
 				46FE01841E8B8ED30004FD23 /* hand.png */,
 				463F3C531E8B85B4009EAD42 /* Hospital.png */,
 				5A1A6A3C1E7BEA1700C2C2AB /* doctorc.png */,
@@ -618,10 +682,12 @@
 				5A546AEC1E82412B0018DF73 /* Time.png in Resources */,
 				5A6FD3691E8501DF00508B84 /* NotificationTableCell.xib in Resources */,
 				5A586CA01E89475A003ED713 /* RightBtnicon.png in Resources */,
+				464B585C1E8CE6B5001B38EA /* gender.png in Resources */,
 				5A0BCDFE1E7FBAFC004B64AA /* DasBoardTableCell.xib in Resources */,
 				5A546AFF1E825AC50018DF73 /* Dr.png in Resources */,
 				46017F851E8BCF5300180C78 /* send-button.png in Resources */,
 				46F673E21E8BF0DA001FED46 /* sort.png in Resources */,
+				464B586C1E8D0E58001B38EA /* TransationTableCell.xib in Resources */,
 				5A668E8E1E83D8B000DA5496 /* Tab-Done.png in Resources */,
 				5A6FD37B1E851BD400508B84 /* SuccessCollectionCell.xib in Resources */,
 				5A668E961E84012E00DA5496 /* Phone@3x.png in Resources */,
@@ -632,8 +698,10 @@
 				5A6FD3601E84F7BB00508B84 /* CampsDetailTableCell.xib in Resources */,
 				5A1A6A3D1E7BEA1700C2C2AB /* doctorc.png in Resources */,
 				5A546B071E8273190018DF73 /* fortis-logo.png in Resources */,
+				464B58601E8CE6B5001B38EA /* userimg.png in Resources */,
 				5A546AF91E8253E30018DF73 /* membership.png in Resources */,
 				5A586C961E894017003ED713 /* edit.png in Resources */,
+				460235CC1E8D348F00736894 /* settings.png in Resources */,
 				5A586C941E891F7E003ED713 /* favicon.ico in Resources */,
 				5A7F60C51E8A735E000C3188 /* CompareHospitalCell.xib in Resources */,
 				5A7F60C11E8A6D9C000C3188 /* CompareHospitalVC.xib in Resources */,
@@ -649,25 +717,32 @@
 				5A546AE71E82408D0018DF73 /* Cell@2x.png in Resources */,
 				5A6FD3771E851B9800508B84 /* SuccessStoriesVC.xib in Resources */,
 				5A546AF01E824CC70018DF73 /* graduate.png in Resources */,
+				464B585E1E8CE6B5001B38EA /* placeholder.png in Resources */,
 				46F673DE1E8BE87B001FED46 /* ShareScreenVC.xib in Resources */,
 				5A586C9C1E8942D8003ED713 /* photo-camera.png in Resources */,
 				5A546AED1E82412B0018DF73 /* Time@2x.png in Resources */,
 				5A6FD35C1E84F02700508B84 /* Back@3x.png in Resources */,
 				5A6FD37F1E85289B00508B84 /* SuccessStoryFullVC.xib in Resources */,
+				464B585D1E8CE6B5001B38EA /* manager.png in Resources */,
 				5A546B131E829A360018DF73 /* SpecialistCollectionCell.xib in Resources */,
 				5A1A6A411E7C02C900C2C2AB /* DasboardCollectionCell.xib in Resources */,
 				5A532CE61E81566D007FAD95 /* CampsTableCell.xib in Resources */,
 				5A532CDD1E814C67007FAD95 /* HospitalSearchCell.xib in Resources */,
 				5A546AF71E8251570018DF73 /* schedule.png in Resources */,
+				460235D41E8D36FB00736894 /* camera.png in Resources */,
 				46FE01871E8B8EF90004FD23 /* camps.png in Resources */,
 				5A546AE81E82408D0018DF73 /* Cell@3x.png in Resources */,
 				5A668E8A1E83D0AB00DA5496 /* caret-down.png in Resources */,
+				460235D61E8D3A3000736894 /* building.png in Resources */,
 				5A586C9A1E894159003ED713 /* AddNewSuccessStoryVC.xib in Resources */,
 				5A668E901E83D8B000DA5496 /* Tab-Done@3x.png in Resources */,
+				464B585F1E8CE6B5001B38EA /* timer.png in Resources */,
 				5A532CCB1E80FC66007FAD95 /* place_marker@2x.png in Resources */,
+				460235D21E8D35F500736894 /* SettingsVC.xib in Resources */,
 				5A532CCA1E80FC66007FAD95 /* place_marker.png in Resources */,
 				5A668E881E83CB8700DA5496 /* ConfirmAppointmentVC.xib in Resources */,
 				5A668E941E84012E00DA5496 /* Phone.png in Resources */,
+				464B58681E8D0DAA001B38EA /* TransactionVC.xib in Resources */,
 				5A6FD3721E850F1F00508B84 /* DocumentManagerVC.xib in Resources */,
 				5A586C8E1E891740003ED713 /* girl.png in Resources */,
 				46FE01851E8B8ED30004FD23 /* hand.png in Resources */,
@@ -677,8 +752,10 @@
 				463F3C541E8B85B4009EAD42 /* Hospital.png in Resources */,
 				5A532CEB1E815E2E007FAD95 /* MyAppointmentsVC.xib in Resources */,
 				5A6FD3561E84EEDD00508B84 /* CampsDetailVC.xib in Resources */,
+				464B58621E8D0CAC001B38EA /* delete-button.png in Resources */,
 				5A546B0F1E8297020018DF73 /* success (2).png in Resources */,
 				5A1A6A391E7BCAB100C2C2AB /* Dashboard.xib in Resources */,
+				460235CE1E8D34EA00736894 /* notification.png in Resources */,
 				5A668E8F1E83D8B000DA5496 /* Tab-Done@2x.png in Resources */,
 				5A0BCE071E7FC101004B64AA /* Menus.png in Resources */,
 				5A586CA41E89481B003ED713 /* AddStoryDetail.xib in Resources */,
@@ -768,6 +845,7 @@
 				5A6FD3711E850F1F00508B84 /* DocumentManagerVC.swift in Sources */,
 				5A0BCDFD1E7FBAFC004B64AA /* DasBoardTableCell.swift in Sources */,
 				5A668E871E83CB8700DA5496 /* ConfirmAppointmentVC.swift in Sources */,
+				464B586B1E8D0E58001B38EA /* TransationTableCell.swift in Sources */,
 				5A6FD35F1E84F7BB00508B84 /* CampsDetailTableCell.swift in Sources */,
 				5A586C991E894159003ED713 /* AddNewSuccessStoryVC.swift in Sources */,
 				5A532CEA1E815E2E007FAD95 /* MyAppointmentsVC.swift in Sources */,
@@ -799,6 +877,8 @@
 				5A635DA61E8397A500395D78 /* CalendarFlowLayout.swift in Sources */,
 				5A532CE51E81566D007FAD95 /* CampsTableCell.swift in Sources */,
 				5A7F60D01E8A8300000C3188 /* UIViewController+MFSideMenuAdditions.m in Sources */,
+				464B58671E8D0DAA001B38EA /* TransactionVC.swift in Sources */,
+				460235D11E8D35F500736894 /* SettingsVC.swift in Sources */,
 				5A1A6A431E7C1C5E00C2C2AB /* PrefixFile.swift in Sources */,
 				5A6FD3551E84EEDC00508B84 /* CampsDetailVC.swift in Sources */,
 			);

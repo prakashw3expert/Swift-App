@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftSideVC" customModule="CureadviserApp" customModuleProvider="target">
             <connections>
                 <outlet property="menuView" destination="myn-nJ-ZdU" id="GxM-P2-mmE"/>
+                <outlet property="profileimg" destination="u5j-Le-nkQ" id="7dc-Ui-6Fn"/>
                 <outlet property="scrView" destination="pji-gT-tpr" id="iLw-WH-Thf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -49,6 +50,24 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <state key="normal" title="Login/Register"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA8-RE-d3G">
+                            <rect key="frame" x="235" y="26" width="34" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="settings.png"/>
+                            <connections>
+                                <action selector="SettingsAction:" destination="-1" eventType="touchUpInside" id="fV8-Ud-G5O"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENN-Io-RHd">
+                            <rect key="frame" x="183" y="26" width="34" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="notification.png"/>
+                            <connections>
+                                <action selector="NotificationActionnn:" destination="-1" eventType="touchUpInside" id="nIi-pj-RZr"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.37647058820000001" green="0.2666666667" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
@@ -197,6 +216,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5j-Le-nkQ">
                     <rect key="frame" x="16" y="93" width="90" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -205,6 +225,8 @@
         </view>
     </objects>
     <resources>
+        <image name="notification.png" width="24" height="24"/>
         <image name="place_marker.png" width="17" height="17"/>
+        <image name="settings.png" width="24" height="24"/>
     </resources>
 </document>

@@ -75,10 +75,10 @@
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k64-9M-j3G">
-                        <rect key="frame" x="279" y="30" width="25" height="25"/>
+                        <rect key="frame" x="277" y="20" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="25" id="SU5-Gg-vaS"/>
-                            <constraint firstAttribute="height" constant="25" id="vr7-ki-R2n"/>
+                            <constraint firstAttribute="width" constant="35" id="SU5-Gg-vaS"/>
+                            <constraint firstAttribute="height" constant="35" id="vr7-ki-R2n"/>
                         </constraints>
                         <color key="tintColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                         <state key="normal" image="sharing-interface.png"/>
@@ -99,9 +99,9 @@
                     <constraint firstItem="xcn-HS-w9s" firstAttribute="leading" secondItem="cVq-mx-IUP" secondAttribute="trailing" constant="4" id="fjY-82-NPA"/>
                     <constraint firstItem="cVq-mx-IUP" firstAttribute="top" secondItem="5lm-tk-62j" secondAttribute="bottom" constant="9" id="gnP-mf-gzM"/>
                     <constraint firstItem="5lm-tk-62j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="n2Y-PA-gld"/>
-                    <constraint firstItem="k64-9M-j3G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="s5K-S0-E9x"/>
+                    <constraint firstItem="k64-9M-j3G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="s5K-S0-E9x"/>
                     <constraint firstItem="roa-41-W07" firstAttribute="top" secondItem="5lm-tk-62j" secondAttribute="bottom" constant="8" id="sqf-sV-FfA"/>
-                    <constraint firstAttribute="trailing" secondItem="k64-9M-j3G" secondAttribute="trailing" constant="16" id="yS5-BH-eJd"/>
+                    <constraint firstAttribute="trailing" secondItem="k64-9M-j3G" secondAttribute="trailing" constant="8" id="yS5-BH-eJd"/>
                     <constraint firstItem="roa-41-W07" firstAttribute="leading" secondItem="gph-Xx-i6L" secondAttribute="trailing" constant="5" id="zuA-M4-ag4"/>
                 </constraints>
             </tableViewCellContentView>
