@@ -10,6 +10,7 @@ import UIKit
 
 class MyAppointmentsVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet var imgDr: UIImageView!
     @IBOutlet var receiptActionBtn: UIButton!
     @IBOutlet var appointMentTable: UITableView!
     
@@ -21,7 +22,8 @@ class MyAppointmentsVC: UIViewController,UITableViewDelegate,UITableViewDataSour
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        imgDr.layer.cornerRadius = 5
+        imgDr.clipsToBounds = true
         
         receiptActionBtn.layer.cornerRadius = 25
         receiptActionBtn.layer.shadowColor = UIColor.darkGray.cgColor
@@ -40,11 +42,12 @@ class MyAppointmentsVC: UIViewController,UITableViewDelegate,UITableViewDataSour
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 298, y: 120))
         path.addLine(to: CGPoint(x: -2, y: 90))
-      
+    
         
         //design path in layer
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
+        
         shapeLayer.strokeColor = UIColor.white.cgColor
         shapeLayer.lineWidth = 45
         

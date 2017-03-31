@@ -10,11 +10,11 @@ import UIKit
 
 class SettingsVC: UIViewController {
 
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var scrView: UIScrollView!
     @IBOutlet var cameraBtn: UIButton!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    override func viewWillAppear(_ animated: Bool) {
         
         cameraBtn.layer.cornerRadius = 25
         cameraBtn.layer.shadowColor = UIColor.darkGray.cgColor
@@ -22,6 +22,26 @@ class SettingsVC: UIViewController {
         cameraBtn.layer.shadowOpacity = 0.5
         cameraBtn.layer.shadowRadius = 2.0
         
+        mainView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 667)
+        scrView.addSubview(mainView)
+        scrView.contentSize = CGSize(width: screenWidth, height: 700)
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DismissKeyBoard))
+        self.view.addGestureRecognizer(tapGesture)
+        
+        
+    }
+    
+    func DismissKeyBoard()
+    {
+       view.endEditing(true)    
     }
 
     @IBAction func MenuAction(_ sender: Any) {

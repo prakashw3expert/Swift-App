@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-jW-EzM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pTu-Sf-GHF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dr.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pTu-Sf-GHF">
                                 <rect key="frame" x="12" y="4" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="width" constant="40" id="p8X-Pr-5lC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Ajay Singh Ranawat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-im-2A1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Lalita Gosai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-im-2A1">
                                 <rect key="frame" x="60" y="14" width="220" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="cHg-H0-aMa"/>
@@ -85,6 +85,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Dr.jpg" width="1200" height="1074"/>
         <image name="cancel-cross.png" width="16" height="16"/>
     </resources>
 </document>

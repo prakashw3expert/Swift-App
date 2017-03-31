@@ -10,6 +10,11 @@ import UIKit
 
 class CampsTableCell: UITableViewCell {
 
+    @IBOutlet var lblTime: UILabel!
+    @IBOutlet var lbldate: UILabel!
+    @IBOutlet var lblRating: UILabel!
+    @IBOutlet var lblCampName: UILabel!
+    @IBOutlet var img: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +24,14 @@ class CampsTableCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        img.layer.cornerRadius = 5
+        img.clipsToBounds = true
+        
+        lblRating.layer.cornerRadius = 3
+        lblRating.clipsToBounds  = true
+        
+        
     }
     
 }

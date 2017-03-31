@@ -24,6 +24,8 @@ class DasboardCollectionCell: UICollectionViewCell {
 //        img.layer.borderColor = themeColor.cgColor
 //        img.clipsToBounds = true
         
+        
+        
     }
 
 }

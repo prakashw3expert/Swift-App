@@ -33,8 +33,14 @@ class AddNewSuccessStoryVC: UIViewController {
         cameraBtn.layer.cornerRadius = 25
         cameraBtn.clipsToBounds = true
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DismissKeyBoard))
+        self.view.addGestureRecognizer(tapGesture)
+        
     }
-
+    func DismissKeyBoard()
+    {
+        view.endEditing(true)
+    }
     @IBAction func SuccessAction(_ sender: Any) {
         self.navigationController?.pushViewController(AddStoryDetail(nibName: "AddStoryDetail", bundle: nil), animated: true)
         

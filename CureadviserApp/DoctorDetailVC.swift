@@ -261,19 +261,19 @@ class DoctorDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource
           self.DrDetailTbl.backgroundColor = UIColor.white
             switch indexPath.row {
             case 0:
-                cell.btnimg.setImage(UIImage.init(named: "place_marker.png"), for: .normal)
+                cell.btnimg.setImage(UIImage.init(named: "placeholder.png"), for: .normal)
                 cell.TxtLbl.text = "Jaipur, Rajasthan"
             case 1:
-                cell.btnimg.setImage(UIImage.init(named: "cell.png"), for: .normal)
+                cell.btnimg.setImage(UIImage.init(named: "Cell.png"), for: .normal)
                 cell.TxtLbl.text = "9785 555 444"
             case 2:
-                cell.btnimg.setImage(UIImage.init(named: "cell.png"), for: .normal)
+                cell.btnimg.setImage(UIImage.init(named: "email.png"), for: .normal)
                 cell.TxtLbl.text = "shulekhabhandri@gmail.com"
             case 3:
-                cell.btnimg.setImage(UIImage.init(named: "time.png"), for: .normal)
+                cell.btnimg.setImage(UIImage.init(named: "timer.png"), for: .normal)
                 cell.TxtLbl.text = "15 min"
             case 4:
-                cell.btnimg.setImage(UIImage.init(named: "time.png"), for: .normal)
+                cell.btnimg.setImage(UIImage.init(named: "rupee-indian.png"), for: .normal)
                 cell.TxtLbl.text = "200"
             default:
                 break

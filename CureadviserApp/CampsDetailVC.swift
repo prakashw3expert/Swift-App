@@ -10,6 +10,7 @@ import UIKit
 
 class CampsDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet var img: UIImageView!
     @IBOutlet var campsTable: UITableView!
     @IBOutlet var TaskView: UIScrollView!
     
@@ -25,6 +26,9 @@ class CampsDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
 
         // Do any additional setup after loading the view.
         
+        
+        img.layer.cornerRadius = 5
+        img.clipsToBounds = true
         
         let path = UIBezierPath()
         path.move(to: CGPoint(x: -10, y: 20))
@@ -95,19 +99,19 @@ class CampsDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
         
         switch indexPath.row {
         case 0:
-            Cell.iconImgbtn.setImage(UIImage.init(named: "place_marker.png"), for: .normal)
+            Cell.iconImgbtn.setImage(UIImage.init(named: "placeholder.png"), for: .normal)
             Cell.lblText.text = "Jaipur, Rajasthan"
         case 1:
-            Cell.iconImgbtn.setImage(UIImage.init(named: "cell.png"), for: .normal)
+            Cell.iconImgbtn.setImage(UIImage.init(named: "Hospital.png"), for: .normal)
             Cell.lblText.text = "Fortis hospital"
         case 2:
-            Cell.iconImgbtn.setImage(UIImage.init(named: "time.png"), for: .normal)
+            Cell.iconImgbtn.setImage(UIImage.init(named: "email.png"), for: .normal)
             Cell.lblText.text = "shulekhabhandri@gmail.com"
         case 3:
             Cell.iconImgbtn.setImage(UIImage.init(named: "cell.png"), for: .normal)
             Cell.lblText.text = "0141-2590807"
         case 4:
-            Cell.iconImgbtn.setImage(UIImage.init(named: "time.png"), for: .normal)
+            Cell.iconImgbtn.setImage(UIImage.init(named: "rupee-indian.png"), for: .normal)
             Cell.lblText.text = "200"
         default:
             break

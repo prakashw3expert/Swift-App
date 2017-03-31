@@ -29,10 +29,16 @@ class DrDetailTblCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        cellView2.layer.cornerRadius = 3
+        
         cellView2.layer.shadowColor = UIColor.darkGray.cgColor
-        cellView2.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cellView2.layer.shadowOffset = CGSize(width: 1, height: 2.0)
         cellView2.layer.shadowOpacity = 0.5
         cellView2.layer.shadowRadius = 2.0
+        
+        
+      
+        
         
         
     }

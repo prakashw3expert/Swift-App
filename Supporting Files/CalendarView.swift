@@ -220,13 +220,10 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     
     fileprivate func createSubviews() {
         
-        
         self.clipsToBounds = true
         
         // Register Class
         self.calendarView.register(CalendarDayCell.self, forCellWithReuseIdentifier: cellReuseIdentifier)
-        
-        
         self.addSubview(self.headerView)
         self.addSubview(self.calendarView)
     }

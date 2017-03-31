@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qM0-HH-kmr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dr.png" translatesAutoresizingMaskIntoConstraints="NO" id="wtY-7F-KPJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dr2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wtY-7F-KPJ">
                                 <rect key="frame" x="10" y="14" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -67,11 +67,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4U-9c-ePG">
+                                <rect key="frame" x="84" y="88" width="228" height="1"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IBY-ps-F5R"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dH7-D4-REP" firstAttribute="leading" secondItem="wtY-7F-KPJ" secondAttribute="trailing" constant="14" id="091-ht-tND"/>
                             <constraint firstItem="CsF-Xl-HM1" firstAttribute="top" secondItem="XOt-6N-mc4" secondAttribute="bottom" constant="20" id="1fu-OT-rZ1"/>
+                            <constraint firstAttribute="bottom" secondItem="u4U-9c-ePG" secondAttribute="bottom" id="FQ5-qo-PP7"/>
                             <constraint firstAttribute="bottom" secondItem="wtY-7F-KPJ" secondAttribute="bottom" constant="15" id="L26-Vm-pNw"/>
                             <constraint firstAttribute="trailing" secondItem="XOt-6N-mc4" secondAttribute="trailing" constant="22" id="MNb-wp-SxX"/>
                             <constraint firstItem="dH7-D4-REP" firstAttribute="top" secondItem="XOt-6N-mc4" secondAttribute="bottom" constant="1" id="Pf5-h0-HJC"/>
@@ -79,10 +87,12 @@
                             <constraint firstItem="wtY-7F-KPJ" firstAttribute="top" secondItem="qM0-HH-kmr" secondAttribute="top" constant="14" id="Q0N-bC-cfn"/>
                             <constraint firstItem="GAm-KA-uA6" firstAttribute="leading" secondItem="qM0-HH-kmr" secondAttribute="leading" constant="24" id="VdP-EG-a7f"/>
                             <constraint firstItem="CsF-Xl-HM1" firstAttribute="leading" secondItem="wtY-7F-KPJ" secondAttribute="trailing" constant="14" id="a9D-de-CIb"/>
+                            <constraint firstItem="u4U-9c-ePG" firstAttribute="leading" secondItem="qM0-HH-kmr" secondAttribute="leading" constant="84" id="bRv-bp-Atj"/>
                             <constraint firstAttribute="trailing" secondItem="CsF-Xl-HM1" secondAttribute="trailing" constant="22" id="dVs-AY-s4S"/>
                             <constraint firstItem="XOt-6N-mc4" firstAttribute="leading" secondItem="wtY-7F-KPJ" secondAttribute="trailing" constant="14" id="eb7-aQ-ANg"/>
                             <constraint firstAttribute="bottom" secondItem="GAm-KA-uA6" secondAttribute="bottom" constant="8" id="f1S-Gz-Uvq"/>
                             <constraint firstItem="wtY-7F-KPJ" firstAttribute="leading" secondItem="qM0-HH-kmr" secondAttribute="leading" constant="10" id="h4b-mb-aIj"/>
+                            <constraint firstAttribute="trailing" secondItem="u4U-9c-ePG" secondAttribute="trailing" constant="8" id="iK9-61-rMY"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -103,6 +113,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Dr.png" width="100" height="100"/>
+        <image name="Dr2.jpg" width="400" height="400"/>
     </resources>
 </document>

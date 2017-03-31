@@ -16,7 +16,7 @@ class CalendarHeaderView: UIView {
         
         
         let lbl = UILabel()
-        lbl.textAlignment = NSTextAlignment.center
+        lbl.textAlignment = .center
         lbl.font = UIFont(name: "Helvetica", size: 16.0)
         lbl.textColor = UIColor.darkGray
         

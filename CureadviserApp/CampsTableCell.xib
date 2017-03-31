@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-gG-EyF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dr.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vh6-fQ-dID">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blood-Dontaion.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Vh6-fQ-dID">
                                 <rect key="frame" x="8" y="8" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="UCL-gy-a4D"/>
@@ -47,45 +47,83 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ps-d1-bjz">
-                                <rect key="frame" x="76" y="26" width="17" height="22"/>
+                                <rect key="frame" x="79" y="30" width="10" height="13"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="17" id="OPd-C8-nDq"/>
-                                    <constraint firstAttribute="height" constant="22" id="fIn-qv-R1r"/>
+                                    <constraint firstAttribute="width" constant="10" id="OPd-C8-nDq"/>
+                                    <constraint firstAttribute="height" constant="13" id="fIn-qv-R1r"/>
                                 </constraints>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="place_marker.png"/>
+                                <state key="normal" image="schedule.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11 Jun - 15 Jun" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-Ue-RaO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 Jun - 15 Jun" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-Ue-RaO">
                                 <rect key="frame" x="93" y="29" width="79" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Ufe-yl-lRK"/>
+                                    <constraint firstAttribute="width" constant="79" id="crY-0P-QeG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5j-Il-vYq">
-                                <rect key="frame" x="174" y="26" width="17" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5j-Il-vYq">
+                                <rect key="frame" x="178" y="30" width="10" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="HIT-4Y-kNl"/>
+                                    <constraint firstAttribute="height" constant="13" id="aEO-fv-9ba"/>
+                                </constraints>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="place_marker.png"/>
+                                <state key="normal" image="Time.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:00 AM - 05:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs1-sU-Eac">
-                                <rect key="frame" x="193" y="29" width="119" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 AM - 05:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs1-sU-Eac">
+                                <rect key="frame" x="192" y="29" width="119" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="8Jd-Uc-Lmd"/>
+                                    <constraint firstAttribute="width" constant="119" id="bJ5-s2-RVf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fortis Hospital" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uff-89-TNV">
+                                <rect key="frame" x="93" y="47" width="218" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="JiK-nX-wCe"/>
+                                    <constraint firstAttribute="height" constant="15" id="xUF-62-9W9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny9-ei-IPY">
+                                <rect key="frame" x="79" y="49" width="10" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="TF4-U2-L8e"/>
+                                    <constraint firstAttribute="height" constant="11" id="yi8-Yv-3Zx"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="Hospital.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1ps-d1-bjz" firstAttribute="leading" secondItem="Vh6-fQ-dID" secondAttribute="trailing" constant="8" id="2S3-7S-cLL"/>
+                            <constraint firstItem="1ps-d1-bjz" firstAttribute="leading" secondItem="Vh6-fQ-dID" secondAttribute="trailing" constant="11" id="2S3-7S-cLL"/>
+                            <constraint firstItem="ny9-ei-IPY" firstAttribute="leading" secondItem="Vh6-fQ-dID" secondAttribute="trailing" constant="11" id="2UQ-5b-MUH"/>
                             <constraint firstItem="Vh6-fQ-dID" firstAttribute="top" secondItem="gWX-gG-EyF" secondAttribute="top" constant="8" id="4dL-Wb-tj4"/>
                             <constraint firstItem="X3d-4w-wyX" firstAttribute="top" secondItem="gWX-gG-EyF" secondAttribute="top" constant="8" id="8jv-eX-x4s"/>
+                            <constraint firstItem="uff-89-TNV" firstAttribute="top" secondItem="Vs1-sU-Eac" secondAttribute="bottom" constant="3" id="CU0-RE-WqW"/>
+                            <constraint firstItem="W5j-Il-vYq" firstAttribute="top" secondItem="X3d-4w-wyX" secondAttribute="bottom" constant="4" id="E4M-nJ-Gst"/>
                             <constraint firstItem="X3d-4w-wyX" firstAttribute="leading" secondItem="Vh6-fQ-dID" secondAttribute="trailing" constant="11" id="Maz-Kq-Pgc"/>
-                            <constraint firstItem="1ps-d1-bjz" firstAttribute="top" secondItem="X3d-4w-wyX" secondAttribute="bottom" id="Q8Y-vG-jXX"/>
+                            <constraint firstItem="Vs1-sU-Eac" firstAttribute="top" secondItem="X3d-4w-wyX" secondAttribute="bottom" constant="3" id="P56-EM-Euf"/>
+                            <constraint firstItem="1ps-d1-bjz" firstAttribute="top" secondItem="X3d-4w-wyX" secondAttribute="bottom" constant="4" id="Q8Y-vG-jXX"/>
                             <constraint firstAttribute="trailing" secondItem="X3d-4w-wyX" secondAttribute="trailing" constant="8" id="XXe-oG-muO"/>
+                            <constraint firstItem="W5j-Il-vYq" firstAttribute="leading" secondItem="EAL-Ue-RaO" secondAttribute="trailing" constant="6" id="YwG-n9-7nJ"/>
+                            <constraint firstItem="Vs1-sU-Eac" firstAttribute="leading" secondItem="W5j-Il-vYq" secondAttribute="trailing" constant="4" id="Zm4-kv-8PT"/>
                             <constraint firstItem="Vh6-fQ-dID" firstAttribute="leading" secondItem="gWX-gG-EyF" secondAttribute="leading" constant="8" id="c4U-Oc-ps6"/>
                             <constraint firstItem="C36-LY-Y0b" firstAttribute="leading" secondItem="gWX-gG-EyF" secondAttribute="leading" constant="23" id="fIP-8v-fhL"/>
+                            <constraint firstItem="ny9-ei-IPY" firstAttribute="top" secondItem="1ps-d1-bjz" secondAttribute="bottom" constant="6" id="gEe-ub-Xbe"/>
+                            <constraint firstItem="EAL-Ue-RaO" firstAttribute="leading" secondItem="1ps-d1-bjz" secondAttribute="trailing" constant="4" id="kOq-kb-kJh"/>
+                            <constraint firstItem="uff-89-TNV" firstAttribute="leading" secondItem="ny9-ei-IPY" secondAttribute="trailing" constant="4" id="or9-6D-sK7"/>
+                            <constraint firstItem="EAL-Ue-RaO" firstAttribute="top" secondItem="X3d-4w-wyX" secondAttribute="bottom" constant="3" id="vga-NB-s8H"/>
                             <constraint firstAttribute="bottom" secondItem="C36-LY-Y0b" secondAttribute="bottom" constant="10" id="vwj-5E-6zb"/>
                         </constraints>
                     </view>
@@ -97,10 +135,19 @@
                     <constraint firstAttribute="bottomMargin" secondItem="gWX-gG-EyF" secondAttribute="bottom" constant="-10" id="odK-UY-KK1"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="Vh6-fQ-dID" id="tcN-wM-hjm"/>
+                <outlet property="lblCampName" destination="X3d-4w-wyX" id="IfA-qU-jFf"/>
+                <outlet property="lblRating" destination="C36-LY-Y0b" id="xcg-Co-rrf"/>
+                <outlet property="lblTime" destination="Vs1-sU-Eac" id="EMk-d0-Cqk"/>
+                <outlet property="lbldate" destination="EAL-Ue-RaO" id="2xB-5y-vLl"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Dr.png" width="100" height="100"/>
-        <image name="place_marker.png" width="17" height="17"/>
+        <image name="Hospital.png" width="32" height="32"/>
+        <image name="Time.png" width="16" height="16"/>
+        <image name="blood-Dontaion.jpeg" width="400" height="400"/>
+        <image name="schedule.png" width="32" height="32"/>
     </resources>
 </document>

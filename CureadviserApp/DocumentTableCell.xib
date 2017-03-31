@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-kQ-elx">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray_400.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-kQ-elx">
                         <rect key="frame" x="12" y="10" width="60" height="60"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -118,5 +118,6 @@
         <image name="Time.png" width="16" height="16"/>
         <image name="schedule.png" width="32" height="32"/>
         <image name="sharing-interface.png" width="16" height="16"/>
+        <image name="xray_400.jpg" width="400" height="400"/>
     </resources>
 </document>

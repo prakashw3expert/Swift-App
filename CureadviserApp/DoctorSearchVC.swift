@@ -37,7 +37,7 @@ class DoctorSearchVC: UIViewController, UITableViewDataSource,UITableViewDelegat
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DissmissSortViewAction))
-
+        tapGesture.numberOfTapsRequired = 1
         SortingScreenView.addGestureRecognizer(tapGesture)
         
         Drt.register(UINib(nibName: "DoctorTblCell", bundle: nil), forCellReuseIdentifier: "DrCell")
@@ -47,8 +47,13 @@ class DoctorSearchVC: UIViewController, UITableViewDataSource,UITableViewDelegat
         filterScrView.frame = self.view.frame
         filterScrView.contentSize = CGSize(width: screenWidth, height: 790)
         
+        let tapGes = UITapGestureRecognizer(target: self, action: #selector(DismissKeyBoard))
+        self.filterScrView.addGestureRecognizer(tapGes)
     }
-
+    func DismissKeyBoard()
+    {
+        view.endEditing(true)
+    }
     
     func DissmissSortViewAction() {
         

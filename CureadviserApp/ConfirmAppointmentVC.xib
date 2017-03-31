@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmAppointmentVC" customModule="CureadviserApp" customModuleProvider="target">
             <connections>
+                <outlet property="imgDr" destination="SJQ-Nw-WGm" id="2rR-Vy-b2Z"/>
                 <outlet property="scrView" destination="BCC-8e-aSM" id="IqZ-Qb-KWp"/>
+                <outlet property="txtGender" destination="5zt-Sl-pV8" id="2uh-he-79g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,7 +46,7 @@
                         <constraint firstAttribute="height" constant="64" id="XSr-NX-dME"/>
                     </constraints>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCC-8e-aSM">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCC-8e-aSM" customClass="TPKeyboardAvoidingScrollView">
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <subviews>
                         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-Ho-YDx">
@@ -79,6 +81,9 @@
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="d6P-AN-VxW"/>
+                                    </connections>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yem-xb-N1M">
                                     <rect key="frame" x="16" y="76" width="343" height="2"/>
@@ -95,6 +100,9 @@
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="vjD-4d-EdW"/>
+                                    </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hb-De-em6">
                                     <rect key="frame" x="162" y="111" width="6" height="6"/>
@@ -126,7 +134,10 @@
                                     </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="gPm-DP-Ps0"/>
+                                    </connections>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBL-zE-lMA">
                                     <rect key="frame" x="199" y="130" width="160" height="2"/>
@@ -143,6 +154,9 @@
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="ZT1-Kh-9qT"/>
+                                    </connections>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkB-S5-MnU">
                                     <rect key="frame" x="16" y="183" width="343" height="2"/>
@@ -158,7 +172,10 @@
                                     </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="T9W-p8-3QE"/>
+                                    </connections>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-W8-hKh">
                                     <rect key="frame" x="16" y="236" width="343" height="2"/>
@@ -174,7 +191,10 @@
                                     </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="2af-ib-4xA"/>
+                                    </connections>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfe-0o-DgE">
                                     <rect key="frame" x="16" y="289" width="343" height="2"/>
@@ -202,7 +222,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-Qd-kJV">
                                     <rect key="frame" x="16" y="340" width="343" height="100"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr.png" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-Nw-WGm">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-Nw-WGm">
                                             <rect key="frame" x="0.0" y="14" width="60" height="60"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -357,7 +377,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Dr.png" width="100" height="100"/>
+        <image name="Dr.jpg" width="1200" height="1074"/>
         <image name="Menus.png" width="19" height="12"/>
         <image name="Tab-Done.png" width="19" height="18"/>
         <image name="caret-down.png" width="16" height="16"/>

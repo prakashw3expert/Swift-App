@@ -21,7 +21,7 @@ class AddStoryDetail: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         
-        mainView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight-64)
+        mainView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 603)
         scrView.addSubview(mainView)
         
     }

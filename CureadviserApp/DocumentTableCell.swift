@@ -26,6 +26,9 @@ class DocumentTableCell: UITableViewCell {
         btnShare.layer.borderWidth = 1
         
         
+        img.layer.cornerRadius = 5
+        img.clipsToBounds = true
+        
         
     }
 

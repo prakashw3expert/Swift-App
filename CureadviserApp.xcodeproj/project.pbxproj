@@ -16,6 +16,15 @@
 		460235D41E8D36FB00736894 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 460235D31E8D36FB00736894 /* camera.png */; };
 		460235D61E8D3A3000736894 /* building.png in Resources */ = {isa = PBXBuildFile; fileRef = 460235D51E8D3A3000736894 /* building.png */; };
 		463F3C541E8B85B4009EAD42 /* Hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 463F3C531E8B85B4009EAD42 /* Hospital.png */; };
+		46447E8B1E8E5A7F00CD8B8D /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 46447E8A1E8E5A7F00CD8B8D /* email.png */; };
+		46447E8D1E8E5AF700CD8B8D /* rupee-indian.png in Resources */ = {isa = PBXBuildFile; fileRef = 46447E8C1E8E5AF700CD8B8D /* rupee-indian.png */; };
+		46447E911E8E5E5C00CD8B8D /* Dr2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46447E901E8E5E5C00CD8B8D /* Dr2.jpg */; };
+		46447E931E8E5F6A00CD8B8D /* xray_400.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46447E921E8E5F6A00CD8B8D /* xray_400.jpg */; };
+		46447E951E8E630300CD8B8D /* Dr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46447E941E8E630300CD8B8D /* Dr.jpg */; };
+		46447E971E8E634500CD8B8D /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46447E961E8E634500CD8B8D /* photo.jpg */; };
+		46447E991E8E659800CD8B8D /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46447E981E8E659800CD8B8D /* photo.jpg */; };
+		46447E9B1E8E66BF00CD8B8D /* blood-Dontaion.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 46447E9A1E8E66BF00CD8B8D /* blood-Dontaion.jpeg */; };
+		4649D92A1E8E3DC0002627D8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4649D9291E8E3DC0002627D8 /* TPKeyboardAvoidingScrollView.m */; };
 		464B585C1E8CE6B5001B38EA /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B58571E8CE6B5001B38EA /* gender.png */; };
 		464B585D1E8CE6B5001B38EA /* manager.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B58581E8CE6B5001B38EA /* manager.png */; };
 		464B585E1E8CE6B5001B38EA /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 464B58591E8CE6B5001B38EA /* placeholder.png */; };
@@ -91,7 +100,6 @@
 		5A546AF91E8253E30018DF73 /* membership.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A546AF81E8253E30018DF73 /* membership.png */; };
 		5A546AFB1E8253F50018DF73 /* language.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A546AFA1E8253F50018DF73 /* language.png */; };
 		5A546AFD1E8253FE0018DF73 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A546AFC1E8253FE0018DF73 /* trophy.png */; };
-		5A546AFF1E825AC50018DF73 /* Dr.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A546AFE1E825AC50018DF73 /* Dr.png */; };
 		5A546B021E8270C90018DF73 /* HospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A546B001E8270C90018DF73 /* HospitalVC.swift */; };
 		5A546B031E8270C90018DF73 /* HospitalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546B011E8270C90018DF73 /* HospitalVC.xib */; };
 		5A546B051E82725D0018DF73 /* Fortis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A546B041E82725D0018DF73 /* Fortis.jpg */; };
@@ -165,6 +173,16 @@
 		460235D31E8D36FB00736894 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		460235D51E8D3A3000736894 /* building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building.png; sourceTree = "<group>"; };
 		463F3C531E8B85B4009EAD42 /* Hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hospital.png; sourceTree = "<group>"; };
+		46447E8A1E8E5A7F00CD8B8D /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		46447E8C1E8E5AF700CD8B8D /* rupee-indian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rupee-indian.png"; sourceTree = "<group>"; };
+		46447E901E8E5E5C00CD8B8D /* Dr2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dr2.jpg; sourceTree = "<group>"; };
+		46447E921E8E5F6A00CD8B8D /* xray_400.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xray_400.jpg; sourceTree = "<group>"; };
+		46447E941E8E630300CD8B8D /* Dr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dr.jpg; sourceTree = "<group>"; };
+		46447E961E8E634500CD8B8D /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
+		46447E981E8E659800CD8B8D /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
+		46447E9A1E8E66BF00CD8B8D /* blood-Dontaion.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blood-Dontaion.jpeg"; sourceTree = "<group>"; };
+		4649D9281E8E3DC0002627D8 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		4649D9291E8E3DC0002627D8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		464B58571E8CE6B5001B38EA /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
 		464B58581E8CE6B5001B38EA /* manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manager.png; sourceTree = "<group>"; };
 		464B58591E8CE6B5001B38EA /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
@@ -243,7 +261,6 @@
 		5A546AF81E8253E30018DF73 /* membership.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = membership.png; sourceTree = "<group>"; };
 		5A546AFA1E8253F50018DF73 /* language.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = language.png; sourceTree = "<group>"; };
 		5A546AFC1E8253FE0018DF73 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
-		5A546AFE1E825AC50018DF73 /* Dr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dr.png; sourceTree = "<group>"; };
 		5A546B001E8270C90018DF73 /* HospitalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalVC.swift; sourceTree = "<group>"; };
 		5A546B011E8270C90018DF73 /* HospitalVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HospitalVC.xib; sourceTree = "<group>"; };
 		5A546B041E82725D0018DF73 /* Fortis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fortis.jpg; sourceTree = "<group>"; };
@@ -382,7 +399,11 @@
 				5A532CC21E80F877007FAD95 /* Side Menu */,
 				5A1A6A201E7BCA2700C2C2AB /* CureadviserApp */,
 				5A1A6A1F1E7BCA2700C2C2AB /* Products */,
+				46447E921E8E5F6A00CD8B8D /* xray_400.jpg */,
+				46447E8A1E8E5A7F00CD8B8D /* email.png */,
+				46447E961E8E634500CD8B8D /* photo.jpg */,
 				464B58571E8CE6B5001B38EA /* gender.png */,
+				46447E8C1E8E5AF700CD8B8D /* rupee-indian.png */,
 				464B58581E8CE6B5001B38EA /* manager.png */,
 				464B58591E8CE6B5001B38EA /* placeholder.png */,
 				464B585A1E8CE6B5001B38EA /* timer.png */,
@@ -408,7 +429,6 @@
 				5A546AEF1E824CC70018DF73 /* graduate.png */,
 				5A546AE91E82412B0018DF73 /* Time.png */,
 				5A586C8D1E891740003ED713 /* girl.png */,
-				5A546AFE1E825AC50018DF73 /* Dr.png */,
 				5A546AEA1E82412B0018DF73 /* Time@2x.png */,
 				5A546AEB1E82412B0018DF73 /* Time@3x.png */,
 				5A532CC71E80FC66007FAD95 /* place_marker.png */,
@@ -459,7 +479,11 @@
 				5A1A6A301E7BCA2700C2C2AB /* Info.plist */,
 				460235CB1E8D348F00736894 /* settings.png */,
 				460235CD1E8D34EA00736894 /* notification.png */,
+				46447E981E8E659800CD8B8D /* photo.jpg */,
+				46447E941E8E630300CD8B8D /* Dr.jpg */,
+				46447E901E8E5E5C00CD8B8D /* Dr2.jpg */,
 				46F673DF1E8BF0DA001FED46 /* filter.png */,
+				46447E9A1E8E66BF00CD8B8D /* blood-Dontaion.jpeg */,
 				464B58611E8D0CAC001B38EA /* delete-button.png */,
 				46F673E01E8BF0DA001FED46 /* sort.png */,
 				460235D31E8D36FB00736894 /* camera.png */,
@@ -543,6 +567,8 @@
 		5A635D9D1E83973A00395D78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4649D9281E8E3DC0002627D8 /* TPKeyboardAvoidingScrollView.h */,
+				4649D9291E8E3DC0002627D8 /* TPKeyboardAvoidingScrollView.m */,
 				5A635DA01E8397A500395D78 /* CalendarView.swift */,
 				5A635DA11E8397A500395D78 /* CalendarDayCell.swift */,
 				5A635DA21E8397A500395D78 /* CalendarFlowLayout.swift */,
@@ -679,12 +705,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F673DA1E8BE280001FED46 /* sharing-interface.png in Resources */,
+				46447E931E8E5F6A00CD8B8D /* xray_400.jpg in Resources */,
+				46447E911E8E5E5C00CD8B8D /* Dr2.jpg in Resources */,
 				5A546AEC1E82412B0018DF73 /* Time.png in Resources */,
 				5A6FD3691E8501DF00508B84 /* NotificationTableCell.xib in Resources */,
 				5A586CA01E89475A003ED713 /* RightBtnicon.png in Resources */,
 				464B585C1E8CE6B5001B38EA /* gender.png in Resources */,
 				5A0BCDFE1E7FBAFC004B64AA /* DasBoardTableCell.xib in Resources */,
-				5A546AFF1E825AC50018DF73 /* Dr.png in Resources */,
 				46017F851E8BCF5300180C78 /* send-button.png in Resources */,
 				46F673E21E8BF0DA001FED46 /* sort.png in Resources */,
 				464B586C1E8D0E58001B38EA /* TransationTableCell.xib in Resources */,
@@ -698,6 +725,7 @@
 				5A6FD3601E84F7BB00508B84 /* CampsDetailTableCell.xib in Resources */,
 				5A1A6A3D1E7BEA1700C2C2AB /* doctorc.png in Resources */,
 				5A546B071E8273190018DF73 /* fortis-logo.png in Resources */,
+				46447E8D1E8E5AF700CD8B8D /* rupee-indian.png in Resources */,
 				464B58601E8CE6B5001B38EA /* userimg.png in Resources */,
 				5A546AF91E8253E30018DF73 /* membership.png in Resources */,
 				5A586C961E894017003ED713 /* edit.png in Resources */,
@@ -734,6 +762,7 @@
 				5A546AE81E82408D0018DF73 /* Cell@3x.png in Resources */,
 				5A668E8A1E83D0AB00DA5496 /* caret-down.png in Resources */,
 				460235D61E8D3A3000736894 /* building.png in Resources */,
+				46447E971E8E634500CD8B8D /* photo.jpg in Resources */,
 				5A586C9A1E894159003ED713 /* AddNewSuccessStoryVC.xib in Resources */,
 				5A668E901E83D8B000DA5496 /* Tab-Done@3x.png in Resources */,
 				464B585F1E8CE6B5001B38EA /* timer.png in Resources */,
@@ -747,14 +776,18 @@
 				5A586C8E1E891740003ED713 /* girl.png in Resources */,
 				46FE01851E8B8ED30004FD23 /* hand.png in Resources */,
 				5A532CEF1E815EFE007FAD95 /* AppointmentsCell.xib in Resources */,
+				46447E9B1E8E66BF00CD8B8D /* blood-Dontaion.jpeg in Resources */,
 				5A0BCE0D1E7FC1C7004B64AA /* DoctorTblCell.xib in Resources */,
 				5A546B051E82725D0018DF73 /* Fortis.jpg in Resources */,
 				463F3C541E8B85B4009EAD42 /* Hospital.png in Resources */,
 				5A532CEB1E815E2E007FAD95 /* MyAppointmentsVC.xib in Resources */,
 				5A6FD3561E84EEDD00508B84 /* CampsDetailVC.xib in Resources */,
+				46447E991E8E659800CD8B8D /* photo.jpg in Resources */,
 				464B58621E8D0CAC001B38EA /* delete-button.png in Resources */,
 				5A546B0F1E8297020018DF73 /* success (2).png in Resources */,
 				5A1A6A391E7BCAB100C2C2AB /* Dashboard.xib in Resources */,
+				46447E951E8E630300CD8B8D /* Dr.jpg in Resources */,
+				46447E8B1E8E5A7F00CD8B8D /* email.png in Resources */,
 				460235CE1E8D34EA00736894 /* notification.png in Resources */,
 				5A668E8F1E83D8B000DA5496 /* Tab-Done@2x.png in Resources */,
 				5A0BCE071E7FC101004B64AA /* Menus.png in Resources */,
@@ -874,6 +907,7 @@
 				5A546B021E8270C90018DF73 /* HospitalVC.swift in Sources */,
 				5A1A6A401E7C02C900C2C2AB /* DasboardCollectionCell.swift in Sources */,
 				5A6FD37A1E851BD400508B84 /* SuccessCollectionCell.swift in Sources */,
+				4649D92A1E8E3DC0002627D8 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				5A635DA61E8397A500395D78 /* CalendarFlowLayout.swift in Sources */,
 				5A532CE51E81566D007FAD95 /* CampsTableCell.swift in Sources */,
 				5A7F60D01E8A8300000C3188 /* UIViewController+MFSideMenuAdditions.m in Sources */,

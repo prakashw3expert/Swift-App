@@ -57,7 +57,7 @@
                                 <action selector="MenuAction:" destination="-1" eventType="touchUpInside" id="cdD-bp-Jeu"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr.png" translatesAutoresizingMaskIntoConstraints="NO" id="j6W-kU-2uY">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j6W-kU-2uY">
                             <rect key="frame" x="17" y="60" width="70" height="70"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -318,23 +318,23 @@
                     <rect key="frame" x="37" y="323" width="301" height="250"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="250" id="YJ7-pX-1m7"/>
+                        <constraint firstAttribute="height" constant="250" id="3GB-se-Wmf"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.18564116380000001" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="hNP-Fj-Evg" firstAttribute="leading" secondItem="KNj-jP-Vxs" secondAttribute="leading" constant="37" id="8cT-Hd-fdT"/>
-                <constraint firstAttribute="trailing" secondItem="hNP-Fj-Evg" secondAttribute="trailing" constant="37" id="Bvm-bT-ZdZ"/>
+                <constraint firstItem="hNP-Fj-Evg" firstAttribute="top" secondItem="aaV-gb-qDk" secondAttribute="bottom" constant="54" id="826-oU-sKb"/>
                 <constraint firstItem="SXz-Rc-MwL" firstAttribute="centerX" secondItem="KNj-jP-Vxs" secondAttribute="centerX" id="KGK-6U-OY9"/>
-                <constraint firstAttribute="bottom" secondItem="hNP-Fj-Evg" secondAttribute="bottom" constant="94" id="Vnq-hk-iq9"/>
+                <constraint firstItem="hNP-Fj-Evg" firstAttribute="width" secondItem="SXz-Rc-MwL" secondAttribute="width" id="V0e-SW-hGv"/>
+                <constraint firstItem="hNP-Fj-Evg" firstAttribute="leading" secondItem="SXz-Rc-MwL" secondAttribute="leading" id="ecu-Ps-OHi"/>
                 <constraint firstItem="SXz-Rc-MwL" firstAttribute="centerY" secondItem="KNj-jP-Vxs" secondAttribute="centerY" id="jLi-CQ-o54"/>
             </constraints>
             <point key="canvasLocation" x="551.5" y="52.5"/>
         </view>
     </objects>
     <resources>
-        <image name="Dr.png" width="100" height="100"/>
+        <image name="Dr.jpg" width="1200" height="1074"/>
         <image name="Menus.png" width="19" height="12"/>
         <image name="Time.png" width="16" height="16"/>
         <image name="favicon.ico" width="48" height="48"/>

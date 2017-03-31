@@ -22,8 +22,11 @@ class ShareScreenVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
 
         // Do any additional setup after loading the view.
         
-        img.layer.cornerRadius  = 25
+        img.layer.cornerRadius  = 5
+        img.clipsToBounds = true
+        
         msgSendBtn.layer.cornerRadius = 20
+        msgSendBtn.clipsToBounds = true
         
         
         shareTable.register(UINib(nibName: "shareTableCell", bundle: nil), forCellReuseIdentifier: "shareCell")

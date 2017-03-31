@@ -18,7 +18,7 @@ class LeftSideVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        profileimg.layer.cornerRadius = 45
+        profileimg.layer.cornerRadius = 40
         profileimg.clipsToBounds = true
         profileimg.layer.borderColor = UIColor.lightGray.cgColor
         profileimg.layer.borderWidth = 1
@@ -29,6 +29,19 @@ class LeftSideVC: UIViewController {
         scrView.addSubview(menuView)
         scrView.contentSize = CGSize(width: 250, height: 850)
         
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SettingScreenOpen))
+        tapGesture.numberOfTapsRequired = 1
+        profileimg.addGestureRecognizer(tapGesture)
+        
+    }
+
+    func SettingScreenOpen()
+    {
+        let nav = UINavigationController.init(rootViewController: SettingsVC(nibName: "SettingsVC", bundle: nil))
+        nav.navigationBar.isHidden = true
+        self.menuContainerViewController.centerViewController = nav
+        self.menuContainerViewController.setMenuState(MFSideMenuStateClosed, completion: {})
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,21 +49,8 @@ class LeftSideVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func SettingsAction(_ sender: Any) {
-        
-        let nav = UINavigationController.init(rootViewController: SettingsVC(nibName: "SettingsVC", bundle: nil))
-        nav.navigationBar.isHidden = true
-        self.menuContainerViewController.centerViewController = nav
-        self.menuContainerViewController.setMenuState(MFSideMenuStateClosed, completion: {})
-        
-    }
     
-    @IBAction func NotificationActionnn(_ sender: Any) {
-        let nav = UINavigationController.init(rootViewController: NotificationVC(nibName: "NotificationVC", bundle: nil))
-        nav.navigationBar.isHidden = true
-        self.menuContainerViewController.centerViewController = nav
-        self.menuContainerViewController.setMenuState(MFSideMenuStateClosed, completion: {})
-    }
+    
     @IBAction func BasboardBtnAction(_ sender: UIButton) {
         
         let nav = UINavigationController.init(rootViewController: Dashboard(nibName: "Dashboard", bundle: nil))
